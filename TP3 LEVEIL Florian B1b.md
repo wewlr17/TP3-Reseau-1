@@ -12,14 +12,14 @@ Windows vers VM:
 ```
 PS C:\Users\Florian> ping 192.168.127.10
 
-Envoi d’une requête 'Ping'  192.168.127.10 avec 32 octets de données :
-Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
-Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
-Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
-Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+Envoi d’une requête 'Ping'  192.168.127.10 avec 32 octets de données :
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
 
 Statistiques Ping pour 192.168.127.10:
-    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
 Durée approximative des boucles en millisecondes :
     Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
 ```
@@ -41,7 +41,13 @@ rtt min/avg/max/mdev = 0.242/0.329/0.386/0.046 ms
 [root@localhost ~]#
 ```
 -   _c._ Table de routage  sur VM:
+```
+[root@localhost ~]# ip route
+default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
+10.0.2.0/24 dev enp0s3 proto kernel scope link src 10.0.2.15 metric 100
+192.168.127.0/24 dev enp0s8 proto kernel scope link src 192.168.127.10 metric 101
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTg0NTMxNzIsLTExMTE2MDA4ODcsOD
+eyJoaXN0b3J5IjpbLTE1OTA4Nzc3NDksLTExMTE2MDA4ODcsOD
 g2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
 -->
