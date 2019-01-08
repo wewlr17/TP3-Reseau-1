@@ -50,7 +50,7 @@ default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
 
 ## 5. Faire joujou avec quelques commandes
 
-###   ping
+###   Ping
    * ping  hôte -> VM
 ```
 PS C:\Users\Florian> ping 192.168.127.10
@@ -67,15 +67,36 @@ Durée approximative des boucles en millisecondes :
     Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
 ```
    * ping  VM -> hôte
--   afficher la table de routage
-    -   de l'hôte
-    -   de la VM
-    -   mettre en évidence la ligne qui leur permet de discuter (dans chacune des tables)
+```
+[root@localhost ~]# ping 192.168.127.1
+PING 192.168.127.1 (192.168.127.1) 56(84) bytes of data.
+64 bytes from 192.168.127.1: icmp_seq=1 ttl=128 time=0.242 ms
+64 bytes from 192.168.127.1: icmp_seq=2 ttl=128 time=0.281 ms
+64 bytes from 192.168.127.1: icmp_seq=3 ttl=128 time=0.345 ms
+64 bytes from 192.168.127.1: icmp_seq=4 ttl=128 time=0.352 ms
+64 bytes from 192.168.127.1: icmp_seq=5 ttl=128 time=0.348 ms
+64 bytes from 192.168.127.1: icmp_seq=6 ttl=128 time=0.386 ms
+64 bytes from 192.168.127.1: icmp_seq=7 ttl=128 time=0.350 ms
+^C
+--- 192.168.127.1 ping statistics ---
+7 packets transmitted, 7 received, 0% packet loss, time 6002ms
+rtt min/avg/max/mdev = 0.242/0.329/0.386/0.046 ms
+[root@localhost ~]#
+```
+### Afficher la table de routage
+* de l'hôte
+```
+
+```
+* de la VM
+```
+
+```mettre en évidence la ligne qui leur permet de discuter (dans chacune des tables)
 -   depuis la VM utilisez  `curl`  (ou  `wget`) pour télécharger un fichier sur internet
 -   depuis la VM utilisez  `dig`  pour connaître l'IP de :
     -   `ynov.com`
     -   `google.com`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwOTIyMjY1MiwtMTExMTYwMDg4Nyw4OD
+eyJoaXN0b3J5IjpbMTgwMTIxOTg1NiwtMTExMTYwMDg4Nyw4OD
 YzMzQ3ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
