@@ -91,12 +91,21 @@ rtt min/avg/max/mdev = 0.242/0.329/0.386/0.046 ms
 * de la VM
 ```
 
-```mettre en évidence la ligne qui leur permet de discuter (dans chacune des tables)
+```
+**Mettre en évidence la ligne qui leur permet de discuter:**
+* de l'hôte
+```
+
+```
+* de la VM
+```
+
+```
 -   depuis la VM utilisez  `curl`  (ou  `wget`) pour télécharger un fichier sur internet
 -   depuis la VM utilisez  `dig`  pour connaître l'IP de :
     -   `ynov.com`
     -   `google.com`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMTIxOTg1NiwtMTExMTYwMDg4Nyw4OD
+eyJoaXN0b3J5IjpbMTkwNzMxNjkzOSwtMTExMTYwMDg4Nyw4OD
 YzMzQ3ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
