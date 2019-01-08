@@ -50,12 +50,23 @@ default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
 
 ## 5. Faire joujou avec quelques commandes
 
--   `ping`
-    -   `ping`  hôte -> VM
+###   ping
+   * ping  hôte -> VM
 ```
+PS C:\Users\Florian> ping 192.168.127.10
 
+Envoi d’une requête 'Ping'  192.168.127.10 avec 32 octets de données :
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+
+Statistiques Ping pour 192.168.127.10:
+    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+Durée approximative des boucles en millisecondes :
+    Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
 ```
-    -   `ping`  VM -> hôte
+   * ping  VM -> hôte
 -   afficher la table de routage
     -   de l'hôte
     -   de la VM
@@ -65,6 +76,6 @@ default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
     -   `ynov.com`
     -   `google.com`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI0OTMwNjYsLTExMTE2MDA4ODcsODg2Mz
-M0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTcwOTIyMjY1MiwtMTExMTYwMDg4Nyw4OD
+YzMzQ3ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
