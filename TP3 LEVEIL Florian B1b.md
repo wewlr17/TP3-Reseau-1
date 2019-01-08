@@ -86,6 +86,59 @@ rtt min/avg/max/mdev = 0.242/0.329/0.386/0.046 ms
 ### Afficher la table de routage
 * de l'hôte
 ```
+PS C:\Users\Florian> ROUTE PRINT
+===========================================================================
+Liste d'Interfaces
+  9...d8 cb 8a f3 f1 d5 ......Killer E2400 Gigabit Ethernet Controller
+ 56...0a 00 27 00 00 38 ......VirtualBox Host-Only Ethernet Adapter #2
+  3...9e b6 d0 09 ab 45 ......Microsoft Wi-Fi Direct Virtual Adapter
+  4...ae b6 d0 09 ab 45 ......Microsoft Wi-Fi Direct Virtual Adapter #2
+ 20...9c b6 d0 09 ab 45 ......Killer Wireless-n/a/ac 1535 Wireless Network Adapter
+ 16...9c b6 d0 09 ab 46 ......Bluetooth Device (Personal Area Network)
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Table de routage
+===========================================================================
+Itinéraires actifs :
+Destination réseau    Masque réseau  Adr. passerelle   Adr. interface Métrique
+          0.0.0.0          0.0.0.0      10.33.3.253      10.33.2.111     35
+        10.33.0.0    255.255.252.0         On-link       10.33.2.111    291
+      10.33.2.111  255.255.255.255         On-link       10.33.2.111    291
+      10.33.3.255  255.255.255.255         On-link       10.33.2.111    291
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+    192.168.127.0    255.255.255.0         On-link     192.168.127.1    281
+    192.168.127.1  255.255.255.255         On-link     192.168.127.1    281
+  192.168.127.255  255.255.255.255         On-link     192.168.127.1    281
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link       10.33.2.111    291
+        224.0.0.0        240.0.0.0         On-link     192.168.127.1    281
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link       10.33.2.111    291
+  255.255.255.255  255.255.255.255         On-link     192.168.127.1    281
+===========================================================================
+Itinéraires persistants :
+  Aucun
+
+IPv6 Table de routage
+===========================================================================
+Itinéraires actifs :
+ If Metric Network Destination      Gateway
+  1    331 ::1/128                  On-link
+ 20    291 fe80::/64                On-link
+ 56    281 fe80::/64                On-link
+ 56    281 fe80::41c5:8215:30d8:c93c/128
+                                    On-link
+ 20    291 fe80::5c55:b0b4:ada6:95d9/128
+                                    On-link
+  1    331 ff00::/8                 On-link
+ 20    291 ff00::/8                 On-link
+ 56    281 ff00::/8                 On-link
+===========================================================================
+Itinéraires persistants :
+  Aucun
 
 ```
 * de la VM
@@ -115,7 +168,7 @@ rtt min/avg/max/mdev = 0.242/0.329/0.386/0.046 ms
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjE5MjQxODMsLTE4NDEwMDg4ODcsLT
-ExMTE2MDA4ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5
-ODExNl19
+eyJoaXN0b3J5IjpbMjAyNDYzMjk2MiwtMTcyMTkyNDE4MywtMT
+g0MTAwODg4NywtMTExMTYwMDg4Nyw4ODYzMzQ3ODcsLTIwODg3
+NDY2MTIsNzMwOTk4MTE2XX0=
 -->
