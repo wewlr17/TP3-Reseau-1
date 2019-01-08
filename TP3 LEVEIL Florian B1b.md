@@ -10,7 +10,18 @@
 -   _b._  Prouvez que votre PC hôte et la VM peuvent communiquer:
 Windows vers VM:
 ```
+PS C:\Users\Florian> ping 192.168.127.10
 
+Envoi d’une requête 'Ping'  192.168.127.10 avec 32 octets de données :
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.127.10 : octets=32 temps<1ms TTL=64
+
+Statistiques Ping pour 192.168.127.10:
+    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+Durée approximative des boucles en millisecondes :
+    Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
 ```
 VM vers Windows:
 ```
@@ -31,6 +42,6 @@ rtt min/avg/max/mdev = 0.242/0.329/0.386/0.046 ms
 ```
 -   _c._ Table de routage  sur VM:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTg2NTc4NCwtMTExMTYwMDg4Nyw4OD
-YzMzQ3ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE0OTg0NTMxNzIsLTExMTE2MDA4ODcsOD
+g2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
 -->
