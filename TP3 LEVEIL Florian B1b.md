@@ -101,17 +101,21 @@ rtt min/avg/max/mdev = 0.242/0.329/0.386/0.046 ms
 ```
 
 ```
-* Depuis la VM utilisez  `curl`  (ou  `wget`) pour télécharger un fichier sur internet
+**Depuis la VM utilisez  `curl`  (ou  `wget`) pour télécharger un fichier sur internet:**
 ```
 
 ```
-* depuis la VM utilisez  `dig`  pour connaître l'IP de :
-    * ynov.com:
+ **Depuis la VM utilisez  `dig`  pour connaître l'IP de :**
+ * ynov.com:
 ```
 
 ```
-* google.com
+* google.com:
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDEwMDg4ODcsLTExMTE2MDA4ODcsOD
-g2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE3MjE5MjQxODMsLTE4NDEwMDg4ODcsLT
+ExMTE2MDA4ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5
+ODExNl19
 -->
