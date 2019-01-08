@@ -47,7 +47,24 @@ default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
 10.0.2.0/24 dev enp0s3 proto kernel scope link src 10.0.2.15 metric 100
 192.168.127.0/24 dev enp0s8 proto kernel scope link src 192.168.127.10 metric 101
 ```
+
+## 5. Faire joujou avec quelques commandes
+
+-   `ping`
+    -   `ping`  hôte -> VM
+```
+
+```
+    -   `ping`  VM -> hôte
+-   afficher la table de routage
+    -   de l'hôte
+    -   de la VM
+    -   mettre en évidence la ligne qui leur permet de discuter (dans chacune des tables)
+-   depuis la VM utilisez  `curl`  (ou  `wget`) pour télécharger un fichier sur internet
+-   depuis la VM utilisez  `dig`  pour connaître l'IP de :
+    -   `ynov.com`
+    -   `google.com`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTA4Nzc3NDksLTExMTE2MDA4ODcsOD
-g2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNzI0OTMwNjYsLTExMTE2MDA4ODcsODg2Mz
+M0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
 -->
