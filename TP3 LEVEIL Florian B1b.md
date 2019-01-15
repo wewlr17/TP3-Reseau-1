@@ -299,7 +299,7 @@ success
  **Dans un premier terminal**
  * Lancement du serveur  `netcat`:
  ```
-[florian@localhost ~]$ nc -l
+[florian@localhost ~]$ nc -l 5454
 
 ```
 * Ecoute du port  `5454`  en TCP:
@@ -317,7 +317,10 @@ success
 **Dans un deuxième terminal**
 * Connexion au serveur  `netcat`:
  ```
-
+PS C:\Users\Florian\Desktop\netcat-1.11> ./nc 192.168.127.10 5454
+Teste
+Trop bien
+ça marche
 ```
 
 **Dans un troisième terminal**
@@ -326,10 +329,11 @@ success
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMjc5MjI3OSwyMTE1ODM0NjE0LC01NT
-Y0ODI5MTUsNTA2NTQ1MzMyLDgwNTM2OTM3MSwzOTM4MTEwMzIs
-MTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMiwtMTM0Mz
-c3MzM2OCw0Njk0OTg2MTksODU1OTk4MjgxLDIwMjQ2MzI5NjIs
-LTE3MjE5MjQxODMsLTE4NDEwMDg4ODcsLTExMTE2MDA4ODcsOD
-g2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMzM1NjksMTkwMjc5MjI3OSwyMTE1ODM0Nj
+E0LC01NTY0ODI5MTUsNTA2NTQ1MzMyLDgwNTM2OTM3MSwzOTM4
+MTEwMzIsMTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMi
+wtMTM0Mzc3MzM2OCw0Njk0OTg2MTksODU1OTk4MjgxLDIwMjQ2
+MzI5NjIsLTE3MjE5MjQxODMsLTE4NDEwMDg4ODcsLTExMTE2MD
+A4ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
+
 -->
