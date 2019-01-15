@@ -260,9 +260,11 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
 ```
 ## Firewall
  **A. SSH**  :
- * modifier le fichier  `/etc/ssh/sshd_config`
- * changer le numéro du port sur lequel votre serveur SSH écoute
-        -   **utilisez un port strictement supérieur à 1024**  (`2222`  par exemple)
+ * modifier le fichier  `/etc/ssh/sshd_config`:
+ ```
+ 
+ ```
+ * changer le numéro du port sur lequel votre serveur SSH écoute:
     -   redémarrez le serveur SSH pour que le changement prenne effet
         -   `systemctl restart sshd`
     -   vérifiez que votre serveur SSH écoute sur un port différent de  `22`  (le vôtre)
@@ -283,7 +285,7 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
     -   dans un troisième terminal
         -   utiliser  `ss`  pour visualiser la connexion  `netcat`  en cours
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjM3MjM3OCw4MDUzNjkzNzEsMzkzOD
+eyJoaXN0b3J5IjpbMTA3MTQ2ODEyNSw4MDUzNjkzNzEsMzkzOD
 ExMDMyLDE3MTc1ODcwODIsMTQyODY4NTIzLDEyMzI5MzA2MjIs
 LTEzNDM3NzMzNjgsNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0Nj
 MyOTYyLC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAw
