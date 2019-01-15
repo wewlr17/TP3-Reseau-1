@@ -259,8 +259,31 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
 [florian@localhost ~]$
 ```
 ## Firewall
+ **A. SSH**  :
+ * modifier le fichier  `/etc/ssh/sshd_config`
+ * changer le numéro du port sur lequel votre serveur SSH écoute
+        -   **utilisez un port strictement supérieur à 1024**  (`2222`  par exemple)
+    -   redémarrez le serveur SSH pour que le changement prenne effet
+        -   `systemctl restart sshd`
+    -   vérifiez que votre serveur SSH écoute sur un port différent de  `22`  (le vôtre)
+        -   utilisez  [la commande  `ss`](https://github.com/It4lik/B1-Reseau-2018/blob/master/cours/lexique.md#netstat-ou-ss)
+    -   connectez-vous au serveur en utilisant ce port
+        -   utilisez votre client SSH
+    -   sans autre modification, la connexion devrait échouer
+        -   expliquez pourquoi
+        -   trouvez une solution
+-   **B.  `netcat`**
+    
+    -   dans un premier terminal
+        -   lancer un serveur  `netcat`  dans un terminal (commande  `nc -l`)
+        -   le serveur doit écouter sur le port  `5454`  en TCP
+        -   il faudra autoriser ce port dans le firewall
+    -   dans un deuxième terminal
+        -   se connecter au serveur  `netcat`  (commande  `nc`)
+    -   dans un troisième terminal
+        -   utiliser  `ss`  pour visualiser la connexion  `netcat`  en cours
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3OTkwODM4Niw4MDUzNjkzNzEsMzkzOD
+eyJoaXN0b3J5IjpbLTE1MjM3MjM3OCw4MDUzNjkzNzEsMzkzOD
 ExMDMyLDE3MTc1ODcwODIsMTQyODY4NTIzLDEyMzI5MzA2MjIs
 LTEzNDM3NzMzNjgsNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0Nj
 MyOTYyLC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAw
