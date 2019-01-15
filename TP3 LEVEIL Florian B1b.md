@@ -159,7 +159,17 @@ default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
 ```
 **Depuis la VM utilisez  `curl`  (ou  `wget`) pour télécharger un fichier sur internet:**
 ```
+[florian@localhost ~]$ wget www.google.com
+--2019-01-15 15:23:58--  http://www.google.com/
+Resolving www.google.com (www.google.com)... 216.58.209.228, 2a00:1450:4007:80f::2004
+Connecting to www.google.com (www.google.com)|216.58.209.228|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘index.html’
 
+    [ <=>                                                                           ] 11,326      --.-K/s   in 0.004s
+
+2019-01-15 15:23:58 (2.50 MB/s) - ‘index.html’ saved [11326]
 ```
  **Depuis la VM utilisez  `dig`  pour connaître l'IP de :**
  * ynov.com:
@@ -171,8 +181,8 @@ default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0Nj
-MyOTYyLC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAw
-ODg3LDg4NjMzNDc4NywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbMjQ3OTEyNDA3LDQ2OTQ5ODYxOSw4NTU5OT
+gyODEsMjAyNDYzMjk2MiwtMTcyMTkyNDE4MywtMTg0MTAwODg4
+NywtMTExMTYwMDg4Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTIsNz
+MwOTk4MTE2XX0=
 -->
