@@ -299,6 +299,7 @@ success
  **Dans un premier terminal**
  * Lancement du serveur  `netcat`:
  ```
+[florian@localhost ~]$ nc -l
 
 ```
 * Ecoute du port  `5454`  en TCP:
@@ -322,10 +323,10 @@ success
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNTgzNDYxNCwtNTU2NDgyOTE1LDUwNj
-U0NTMzMiw4MDUzNjkzNzEsMzkzODExMDMyLDE3MTc1ODcwODIs
-MTQyODY4NTIzLDEyMzI5MzA2MjIsLTEzNDM3NzMzNjgsNDY5ND
-k4NjE5LDg1NTk5ODI4MSwyMDI0NjMyOTYyLC0xNzIxOTI0MTgz
-LC0xODQxMDA4ODg3LC0xMTExNjAwODg3LDg4NjMzNDc4NywtMj
-A4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE3MjQ3MjY3MjQsMjExNTgzNDYxNCwtNT
+U2NDgyOTE1LDUwNjU0NTMzMiw4MDUzNjkzNzEsMzkzODExMDMy
+LDE3MTc1ODcwODIsMTQyODY4NTIzLDEyMzI5MzA2MjIsLTEzND
+M3NzMzNjgsNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0NjMyOTYy
+LC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAwODg3LD
+g4NjMzNDc4NywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
 -->
