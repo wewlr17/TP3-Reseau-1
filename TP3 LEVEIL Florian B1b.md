@@ -315,8 +315,13 @@ m.gtld-servers.net.     60588   IN      AAAA    2001:501:b1f9::30
 ```
 
 ```
+**Utilisation des options**
+* `-n`  pour avoir le numéro du port, plutôt qu'un nom
+* `-p`  pour connaître l'application qui écoute sur ce port
+
+**vous devriez voir une application qui écoute sur le port 2**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NjAwODY5NSw0Njk0OTg2MTksODU1OT
+eyJoaXN0b3J5IjpbMTYzNjU5Njk1Myw0Njk0OTg2MTksODU1OT
 k4MjgxLDIwMjQ2MzI5NjIsLTE3MjE5MjQxODMsLTE4NDEwMDg4
 ODcsLTExMTE2MDA4ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLD
 czMDk5ODExNl19
