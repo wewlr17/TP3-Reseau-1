@@ -290,7 +290,10 @@ Last login: Tue Jan 15 17:06:33 2019 from 192.168.127.1
    * Par ce que le port n'a pas été autorisé par le firewall
  * Solution:
  ```
-
+[florian@localhost ~]$ sudo firewall-cmd --add-port=2222/tcp --permanent
+success
+[florian@localhost ~]$ sudo firewall-cmd --reload
+success
 ```
 **B.  `netcat`**
  **Dans un premier terminal**
@@ -319,10 +322,10 @@ Last login: Tue Jan 15 17:06:33 2019 from 192.168.127.1
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTExMDA3MzksLTU1NjQ4MjkxNSw1MD
-Y1NDUzMzIsODA1MzY5MzcxLDM5MzgxMTAzMiwxNzE3NTg3MDgy
-LDE0Mjg2ODUyMywxMjMyOTMwNjIyLC0xMzQzNzczMzY4LDQ2OT
-Q5ODYxOSw4NTU5OTgyODEsMjAyNDYzMjk2MiwtMTcyMTkyNDE4
-MywtMTg0MTAwODg4NywtMTExMTYwMDg4Nyw4ODYzMzQ3ODcsLT
-IwODg3NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMjExNTgzNDYxNCwtNTU2NDgyOTE1LDUwNj
+U0NTMzMiw4MDUzNjkzNzEsMzkzODExMDMyLDE3MTc1ODcwODIs
+MTQyODY4NTIzLDEyMzI5MzA2MjIsLTEzNDM3NzMzNjgsNDY5ND
+k4NjE5LDg1NTk5ODI4MSwyMDI0NjMyOTYyLC0xNzIxOTI0MTgz
+LC0xODQxMDA4ODg3LC0xMTExNjAwODg3LDg4NjMzNDc4NywtMj
+A4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
 -->
