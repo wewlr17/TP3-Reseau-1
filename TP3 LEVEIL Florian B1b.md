@@ -260,7 +260,7 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
 ```
 ## Firewall
  **A. SSH**  :
- * modifier le fichier  `/etc/ssh/sshd_config`:
+
  ```
  
  ```
@@ -285,10 +285,10 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
     -   dans un troisième terminal
         -   utiliser  `ss`  pour visualiser la connexion  `netcat`  en cours
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MTQ2ODEyNSw4MDUzNjkzNzEsMzkzOD
-ExMDMyLDE3MTc1ODcwODIsMTQyODY4NTIzLDEyMzI5MzA2MjIs
-LTEzNDM3NzMzNjgsNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0Nj
-MyOTYyLC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAw
-ODg3LDg4NjMzNDc4NywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbLTE3MDQ0NDA0MjksODA1MzY5MzcxLDM5Mz
+gxMTAzMiwxNzE3NTg3MDgyLDE0Mjg2ODUyMywxMjMyOTMwNjIy
+LC0xMzQzNzczMzY4LDQ2OTQ5ODYxOSw4NTU5OTgyODEsMjAyND
+YzMjk2MiwtMTcyMTkyNDE4MywtMTg0MTAwODg4NywtMTExMTYw
+MDg4Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX
+0=
 -->
