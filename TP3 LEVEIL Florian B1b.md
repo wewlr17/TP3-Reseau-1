@@ -260,18 +260,18 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
 ```
 ## Firewall
  **A. SSH**  :
-* changer le numéro du port sur lequel votre serveur SSH écoute
+* Changement du numéro du port sur lequel le serveur SSH écoute:
 ```
 
 ```
-* redémarrez le serveur SSH pour que le changement prenne effet:
+* Redémarrage du serveur SSH pour que le changement prenne effet:
 ```
 
 ```
-* vérifiez que votre serveur SSH écoute sur un port différent de  `22`  (le vôtre):
+* Le serveur SSH écoute sur un port différent de  `22` :
 * connectez-vous au serveur en utilisant ce port
- * pourquoi ça a échoué 
-        -   trouvez une solution
+ * pourquoi ça a échoué ?
+ * Solution:
 -   **B.  `netcat`**
     
     -   dans un premier terminal
@@ -283,9 +283,10 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
     -   dans un troisième terminal
         -   utiliser  `ss`  pour visualiser la connexion  `netcat`  en cours
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkyMDE4OTYsODA1MzY5MzcxLDM5MzgxMT
-AzMiwxNzE3NTg3MDgyLDE0Mjg2ODUyMywxMjMyOTMwNjIyLC0x
-MzQzNzczMzY4LDQ2OTQ5ODYxOSw4NTU5OTgyODEsMjAyNDYzMj
-k2MiwtMTcyMTkyNDE4MywtMTg0MTAwODg4NywtMTExMTYwMDg4
-Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTI4MjE1NDE5MSw4MDUzNjkzNzEsMzkzOD
+ExMDMyLDE3MTc1ODcwODIsMTQyODY4NTIzLDEyMzI5MzA2MjIs
+LTEzNDM3NzMzNjgsNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0Nj
+MyOTYyLC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAw
+ODg3LDg4NjMzNDc4NywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ
+==
 -->
