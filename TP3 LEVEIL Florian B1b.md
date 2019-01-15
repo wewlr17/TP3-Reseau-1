@@ -151,7 +151,27 @@ default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
 **Mettre en évidence la ligne qui leur permet de discuter:**
 * de l'hôte
 ```
-
+IPv4 Table de routage
+===========================================================================
+Itinéraires actifs :
+Destination réseau    Masque réseau  Adr. passerelle   Adr. interface Métrique
+          0.0.0.0          0.0.0.0      10.33.3.253      10.33.2.111     35
+        10.33.0.0    255.255.252.0         On-link       10.33.2.111    291
+      10.33.2.111  255.255.255.255         On-link       10.33.2.111    291
+      10.33.3.255  255.255.255.255         On-link       10.33.2.111    291
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+    192.168.127.0    255.255.255.0         On-link     *192.168.127.1    281
+    192.168.127.1  255.255.255.255         On-link     192.168.127.1    281
+  192.168.127.255  255.255.255.255         On-link     192.168.127.1    281 *
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link       10.33.2.111    291
+        224.0.0.0        240.0.0.0         On-link     192.168.127.1    281
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link       10.33.2.111    291
+  255.255.255.255  255.255.255.255         On-link     192.168.127.1    281
+===========================================================================
 ```
 * de la VM
 ```
@@ -171,7 +191,8 @@ default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU1OTk4MjgxLDIwMjQ2MzI5NjIsLTE3Mj
-E5MjQxODMsLTE4NDEwMDg4ODcsLTExMTE2MDA4ODcsODg2MzM0
-Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTA1ODg5NTY5NCw4NTU5OTgyODEsMjAyND
+YzMjk2MiwtMTcyMTkyNDE4MywtMTg0MTAwODg4NywtMTExMTYw
+MDg4Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX
+0=
 -->
