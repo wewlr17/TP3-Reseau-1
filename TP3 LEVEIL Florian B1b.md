@@ -174,15 +174,77 @@ Saving to: ‘index.html’
  **Depuis la VM utilisez  `dig`  pour connaître l'IP de :**
  * ynov.com:
 ```
+[florian@localhost ~]$ dig ynov.com
 
+; <<>> DiG 9.9.4-RedHat-9.9.4-72.el7 <<>> ynov.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 4405
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 13, ADDITIONAL: 27
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;ynov.com.                      IN      A
+
+;; ANSWER SECTION:
+ynov.com.               458     IN      A       217.70.184.38
+
+;; AUTHORITY SECTION:
+com.                    60662   IN      NS      h.gtld-servers.net.
+com.                    60662   IN      NS      k.gtld-servers.net.
+com.                    60662   IN      NS      l.gtld-servers.net.
+com.                    60662   IN      NS      f.gtld-servers.net.
+com.                    60662   IN      NS      j.gtld-servers.net.
+com.                    60662   IN      NS      b.gtld-servers.net.
+com.                    60662   IN      NS      i.gtld-servers.net.
+com.                    60662   IN      NS      a.gtld-servers.net.
+com.                    60662   IN      NS      m.gtld-servers.net.
+com.                    60662   IN      NS      g.gtld-servers.net.
+com.                    60662   IN      NS      e.gtld-servers.net.
+com.                    60662   IN      NS      c.gtld-servers.net.
+com.                    60662   IN      NS      d.gtld-servers.net.
+
+;; ADDITIONAL SECTION:
+a.gtld-servers.net.     60662   IN      A       192.5.6.30
+a.gtld-servers.net.     60662   IN      AAAA    2001:503:a83e::2:30
+b.gtld-servers.net.     60662   IN      A       192.33.14.30
+b.gtld-servers.net.     60662   IN      AAAA    2001:503:231d::2:30
+c.gtld-servers.net.     60662   IN      A       192.26.92.30
+c.gtld-servers.net.     60662   IN      AAAA    2001:503:83eb::30
+d.gtld-servers.net.     60662   IN      A       192.31.80.30
+d.gtld-servers.net.     60662   IN      AAAA    2001:500:856e::30
+e.gtld-servers.net.     60662   IN      A       192.12.94.30
+e.gtld-servers.net.     60662   IN      AAAA    2001:502:1ca1::30
+f.gtld-servers.net.     60662   IN      A       192.35.51.30
+f.gtld-servers.net.     60662   IN      AAAA    2001:503:d414::30
+g.gtld-servers.net.     60662   IN      A       192.42.93.30
+g.gtld-servers.net.     60662   IN      AAAA    2001:503:eea3::30
+h.gtld-servers.net.     60662   IN      A       192.54.112.30
+h.gtld-servers.net.     60662   IN      AAAA    2001:502:8cc::30
+i.gtld-servers.net.     60662   IN      A       192.43.172.30
+i.gtld-servers.net.     60662   IN      AAAA    2001:503:39c1::30
+j.gtld-servers.net.     60662   IN      A       192.48.79.30
+j.gtld-servers.net.     60662   IN      AAAA    2001:502:7094::30
+k.gtld-servers.net.     60662   IN      A       192.52.178.30
+k.gtld-servers.net.     60662   IN      AAAA    2001:503:d2d::30
+l.gtld-servers.net.     60662   IN      A       192.41.162.30
+l.gtld-servers.net.     60662   IN      AAAA    2001:500:d937::30
+m.gtld-servers.net.     60662   IN      A       192.55.83.30
+m.gtld-servers.net.     60662   IN      AAAA    2001:501:b1f9::30
+
+;; Query time: 10 msec
+;; SERVER: 10.33.10.20#53(10.33.10.20)
+;; WHEN: Tue Jan 15 15:26:33 CET 2019
+;; MSG SIZE  rcvd: 849
 ```
 * google.com:
 ```
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ3OTEyNDA3LDQ2OTQ5ODYxOSw4NTU5OT
-gyODEsMjAyNDYzMjk2MiwtMTcyMTkyNDE4MywtMTg0MTAwODg4
-NywtMTExMTYwMDg4Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTIsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTA1NTQxMjM3Nyw0Njk0OTg2MTksODU1OT
+k4MjgxLDIwMjQ2MzI5NjIsLTE3MjE5MjQxODMsLTE4NDEwMDg4
+ODcsLTExMTE2MDA4ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLD
+czMDk5ODExNl19
 -->
