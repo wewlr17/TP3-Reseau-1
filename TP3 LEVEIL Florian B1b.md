@@ -260,15 +260,16 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
 ```
 ## Firewall
  **A. SSH**  :
+* changer le numéro du port sur lequel votre serveur SSH écoute
+```
 
- ```
- 
- ```
- * changer le numéro du port sur lequel votre serveur SSH écoute:
-    -   redémarrez le serveur SSH pour que le changement prenne effet
-        -   `systemctl restart sshd`
-    -   vérifiez que votre serveur SSH écoute sur un port différent de  `22`  (le vôtre)
-        -   utilisez  [la commande  `ss`](https://github.com/It4lik/B1-Reseau-2018/blob/master/cours/lexique.md#netstat-ou-ss)
+```
+* redémarrez le serveur SSH pour que le changement prenne effet:
+```
+
+```
+* vérifiez que votre serveur SSH écoute sur un port différent de  `22`  (le vôtre):
+)
     -   connectez-vous au serveur en utilisant ce port
         -   utilisez votre client SSH
     -   sans autre modification, la connexion devrait échouer
@@ -285,7 +286,7 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
     -   dans un troisième terminal
         -   utiliser  `ss`  pour visualiser la connexion  `netcat`  en cours
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQ0NDA0MjksODA1MzY5MzcxLDM5Mz
+eyJoaXN0b3J5IjpbLTE5NDUwMTc4MzYsODA1MzY5MzcxLDM5Mz
 gxMTAzMiwxNzE3NTg3MDgyLDE0Mjg2ODUyMywxMjMyOTMwNjIy
 LC0xMzQzNzczMzY4LDQ2OTQ5ODYxOSw4NTU5OTgyODEsMjAyND
 YzMjk2MiwtMTcyMTkyNDE4MywtMTg0MTAwODg4NywtMTExMTYw
