@@ -244,12 +244,15 @@ users:(("sshd",pid=3475,fd=3),("sshd",pid=3471,fd=3))
 
 **Application qui écoute sur le port 22:**
 ```
-
+[florian@localhost ~]$ sudo ss -tpn
+State       Recv-Q Send-Q                                                                                      Local Address:Port                                                                                                     Peer Address:Port
+ESTAB       0      0                                                                                          192.168.127.10:22                                                                                                      192.168.127.1:1147              
+users:(("sshd",pid=3475,fd=3),("sshd",pid=3471,fd=3))
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkzODExMDMyLDE3MTc1ODcwODIsMTQyOD
-Y4NTIzLDEyMzI5MzA2MjIsLTEzNDM3NzMzNjgsNDY5NDk4NjE5
-LDg1NTk5ODI4MSwyMDI0NjMyOTYyLC0xNzIxOTI0MTgzLC0xOD
-QxMDA4ODg3LC0xMTExNjAwODg3LDg4NjMzNDc4NywtMjA4ODc0
-NjYxMiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbODA1MzY5MzcxLDM5MzgxMTAzMiwxNzE3NT
+g3MDgyLDE0Mjg2ODUyMywxMjMyOTMwNjIyLC0xMzQzNzczMzY4
+LDQ2OTQ5ODYxOSw4NTU5OTgyODEsMjAyNDYzMjk2MiwtMTcyMT
+kyNDE4MywtMTg0MTAwODg4NywtMTExMTYwMDg4Nyw4ODYzMzQ3
+ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
