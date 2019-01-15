@@ -304,9 +304,12 @@ m.gtld-servers.net.     60588   IN      AAAA    2001:501:b1f9::30
 ;; WHEN: Tue Jan 15 15:27:46 CET 2019
 ;; MSG SIZE  rcvd: 851
 ```
+# II. Notion de ports et SSH
+## 1. Exploration des ports locaux
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTI4MzI3MDQsNDY5NDk4NjE5LDg1NT
-k5ODI4MSwyMDI0NjMyOTYyLC0xNzIxOTI0MTgzLC0xODQxMDA4
-ODg3LC0xMTExNjAwODg3LDg4NjMzNDc4NywtMjA4ODc0NjYxMi
-w3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTYxNTY5MTkwMiw0Njk0OTg2MTksODU1OT
+k4MjgxLDIwMjQ2MzI5NjIsLTE3MjE5MjQxODMsLTE4NDEwMDg4
+ODcsLTExMTE2MDA4ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLD
+czMDk5ODExNl19
 -->
