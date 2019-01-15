@@ -152,12 +152,10 @@ default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
 * de l'hôte
 ```
 192.168.127.0    255.255.255.0         On-link     192.168.127.1    281
-192.168.127.1  255.255.255.255         On-link     192.168.127.1    281
-192.168.127.255  255.255.255.255         On-link     192.168.127.1    281
 ```
 * de la VM
 ```
-
+192.168.127.0/24 dev enp0s8 proto kernel scope link src 192.168.127.10 metric 101
 ```
 **Depuis la VM utilisez  `curl`  (ou  `wget`) pour télécharger un fichier sur internet:**
 ```
@@ -173,8 +171,8 @@ default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MjUwNDQ5OCw4NTU5OTgyODEsMjAyND
-YzMjk2MiwtMTcyMTkyNDE4MywtMTg0MTAwODg4NywtMTExMTYw
-MDg4Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX
-0=
+eyJoaXN0b3J5IjpbNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0Nj
+MyOTYyLC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAw
+ODg3LDg4NjMzNDc4NywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ
+==
 -->
