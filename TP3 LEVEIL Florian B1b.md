@@ -313,9 +313,14 @@ m.gtld-servers.net.     60588   IN      AAAA    2001:501:b1f9::30
 State      Recv-Q Send-Q             Local Address:Port                              Peer Address:Port
 ESTAB      0      0                 192.168.127.10:ssh                              192.168.127.1:capioverlan
 ```
-* Pour Listening:
+* Pour Listening/TCP:
 ```
-
+[florian@localhost ~]$ ss -tl
+State      Recv-Q Send-Q             Local Address:Port                              Peer Address:Port
+LISTEN     0      128                            *:ssh                                          *:*
+LISTEN     0      100                    127.0.0.1:smtp                                         *:*
+LISTEN     0      128                           :::ssh                                         :::*
+LISTEN     0      100                          ::1:smtp                                        :::*
 ```
 **Utilisation des options**
 * `-n` :
@@ -332,8 +337,8 @@ ESTAB      0      0                 192.168.127.10:ssh                          
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMjkzMDYyMiwtMTM0Mzc3MzM2OCw0Nj
-k0OTg2MTksODU1OTk4MjgxLDIwMjQ2MzI5NjIsLTE3MjE5MjQx
-ODMsLTE4NDEwMDg4ODcsLTExMTE2MDA4ODcsODg2MzM0Nzg3LC
-0yMDg4NzQ2NjEyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTQyODY4NTIzLDEyMzI5MzA2MjIsLTEzND
+M3NzMzNjgsNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0NjMyOTYy
+LC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAwODg3LD
+g4NjMzNDc4NywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
 -->
