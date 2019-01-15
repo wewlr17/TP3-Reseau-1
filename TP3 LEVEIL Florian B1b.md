@@ -284,17 +284,32 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
 ```
 **B.  `netcat`**
  **Dans un premier terminal**
- * Lancecement du serveur  `netcat`  dans un terminal (commande  `nc -l`):
-* Le serveur doit écouter sur le port  `5454`  en TCP:
+ * Lancement du serveur  `netcat`:
+ ```
+
+```
+* Ecoute du port  `5454`  en TCP:
+ ```
+
+```
 * Autorisation de ce port dans le firewall:
+ ```
+
+```
 
 **Dans un deuxième terminal**
 * Connexion au serveur  `netcat`:
+ ```
+
+```
 
 **Dans un troisième terminal**
 * Visualisation de la connexion  `netcat`  en cours:
+ ```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMyNzk4MzI1LDgwNTM2OTM3MSwzOTM4MT
+eyJoaXN0b3J5IjpbNTA2NTQ1MzMyLDgwNTM2OTM3MSwzOTM4MT
 EwMzIsMTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMiwt
 MTM0Mzc3MzM2OCw0Njk0OTg2MTksODU1OTk4MjgxLDIwMjQ2Mz
 I5NjIsLTE3MjE5MjQxODMsLTE4NDEwMDg4ODcsLTExMTE2MDA4
