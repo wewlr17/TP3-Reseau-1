@@ -249,10 +249,15 @@ State       Recv-Q Send-Q                                                       
 ESTAB       0      0                                                                                          192.168.127.10:22                                                                                                      192.168.127.1:1147              
 users:(("sshd",pid=3475,fd=3),("sshd",pid=3471,fd=3))
 ```
+## 2. SSH
+**Connexion au SSH:** 
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA1MzY5MzcxLDM5MzgxMTAzMiwxNzE3NT
-g3MDgyLDE0Mjg2ODUyMywxMjMyOTMwNjIyLC0xMzQzNzczMzY4
-LDQ2OTQ5ODYxOSw4NTU5OTgyODEsMjAyNDYzMjk2MiwtMTcyMT
-kyNDE4MywtMTg0MTAwODg4NywtMTExMTYwMDg4Nyw4ODYzMzQ3
-ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNjA4NjQ5NzQsODA1MzY5MzcxLDM5MzgxMT
+AzMiwxNzE3NTg3MDgyLDE0Mjg2ODUyMywxMjMyOTMwNjIyLC0x
+MzQzNzczMzY4LDQ2OTQ5ODYxOSw4NTU5OTgyODEsMjAyNDYzMj
+k2MiwtMTcyMTkyNDE4MywtMTg0MTAwODg4NywtMTExMTYwMDg4
+Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
