@@ -325,7 +325,9 @@ LISTEN     0      100                          ::1:smtp                         
 **Utilisation des options**
 * `-n` :
 ```
-
+[florian@localhost ~]$ ss -tn
+State       Recv-Q Send-Q              Local Address:Port                             Peer Address:Port
+ESTAB       0      0                  192.168.127.10:22                              192.168.127.1:1147
 ```
 * `-p` :
 ```
@@ -337,8 +339,9 @@ LISTEN     0      100                          ::1:smtp                         
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyODY4NTIzLDEyMzI5MzA2MjIsLTEzND
-M3NzMzNjgsNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0NjMyOTYy
-LC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAwODg3LD
-g4NjMzNDc4NywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMj
+kzMDYyMiwtMTM0Mzc3MzM2OCw0Njk0OTg2MTksODU1OTk4Mjgx
+LDIwMjQ2MzI5NjIsLTE3MjE5MjQxODMsLTE4NDEwMDg4ODcsLT
+ExMTE2MDA4ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5
+ODExNl19
 -->
