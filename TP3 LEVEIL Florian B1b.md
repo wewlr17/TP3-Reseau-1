@@ -269,13 +269,22 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
 
 ```
 * Le serveur SSH écoute sur un port différent de  `22` :
+```
+
+```
 * connectez-vous au serveur en utilisant ce port
+```
+
+```
  * pourquoi ça a échoué ?
+ 
  * Solution:
--   **B.  `netcat`**
-    
-    -   dans un premier terminal
-        -   lancer un serveur  `netcat`  dans un terminal (commande  `nc -l`)
+ ```
+
+```
+**B.  `netcat`**
+ dans un premier terminal
+ * lancer un serveur  `netcat`  dans un terminal (commande  `nc -l`)
         -   le serveur doit écouter sur le port  `5454`  en TCP
         -   il faudra autoriser ce port dans le firewall
     -   dans un deuxième terminal
@@ -283,10 +292,9 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
     -   dans un troisième terminal
         -   utiliser  `ss`  pour visualiser la connexion  `netcat`  en cours
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4MjE1NDE5MSw4MDUzNjkzNzEsMzkzOD
-ExMDMyLDE3MTc1ODcwODIsMTQyODY4NTIzLDEyMzI5MzA2MjIs
-LTEzNDM3NzMzNjgsNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0Nj
-MyOTYyLC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAw
-ODg3LDg4NjMzNDc4NywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbODM0NzMyNjkyLDgwNTM2OTM3MSwzOTM4MT
+EwMzIsMTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMiwt
+MTM0Mzc3MzM2OCw0Njk0OTg2MTksODU1OTk4MjgxLDIwMjQ2Mz
+I5NjIsLTE3MjE5MjQxODMsLTE4NDEwMDg4ODcsLTExMTE2MDA4
+ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
 -->
