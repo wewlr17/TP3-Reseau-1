@@ -306,9 +306,17 @@ m.gtld-servers.net.     60588   IN      AAAA    2001:501:b1f9::30
 ```
 # II. Notion de ports et SSH
 ## 1. Exploration des ports locaux
+**Utilisation de la commande SS**
+* Pour TCP:
+```
 
+```
+* Pour Listening:
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNTY5MTkwMiw0Njk0OTg2MTksODU1OT
+eyJoaXN0b3J5IjpbLTM3NjAwODY5NSw0Njk0OTg2MTksODU1OT
 k4MjgxLDIwMjQ2MzI5NjIsLTE3MjE5MjQxODMsLTE4NDEwMDg4
 ODcsLTExMTE2MDA4ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLD
 czMDk5ODExNl19
