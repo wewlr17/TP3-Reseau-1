@@ -252,12 +252,18 @@ users:(("sshd",pid=3475,fd=3),("sshd",pid=3471,fd=3))
 ## 2. SSH
 **Connexion au SSH:** 
 ```
-
+PS C:\Users\Florian> ssh florian@192.168.127.10
+florian@192.168.127.10's password:
+Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
+Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
+[florian@localhost ~]$
 ```
+## Firewall
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA4NjQ5NzQsODA1MzY5MzcxLDM5MzgxMT
-AzMiwxNzE3NTg3MDgyLDE0Mjg2ODUyMywxMjMyOTMwNjIyLC0x
-MzQzNzczMzY4LDQ2OTQ5ODYxOSw4NTU5OTgyODEsMjAyNDYzMj
-k2MiwtMTcyMTkyNDE4MywtMTg0MTAwODg4NywtMTExMTYwMDg4
-Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTY3OTkwODM4Niw4MDUzNjkzNzEsMzkzOD
+ExMDMyLDE3MTc1ODcwODIsMTQyODY4NTIzLDEyMzI5MzA2MjIs
+LTEzNDM3NzMzNjgsNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0Nj
+MyOTYyLC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAw
+ODg3LDg4NjMzNDc4NywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ
+==
 -->
