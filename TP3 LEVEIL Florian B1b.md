@@ -262,11 +262,13 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
  **A. SSH**  :
 * Changement du numéro du port sur lequel le serveur SSH écoute:
 ```
-
+[florian@localhost ~]$ sudo firewall-cmd --add-port=2222/tcp --permanent
+success
 ```
 * Redémarrage du serveur SSH pour que le changement prenne effet:
 ```
-
+[florian@localhost ~]$ sudo firewall-cmd --reload
+success
 ```
 * Le serveur SSH écoute sur un port différent de  `22` :
 ```
@@ -309,9 +311,10 @@ Last login: Tue Jan 15 15:05:07 2019 from 192.168.127.1
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA2NTQ1MzMyLDgwNTM2OTM3MSwzOTM4MT
-EwMzIsMTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMiwt
-MTM0Mzc3MzM2OCw0Njk0OTg2MTksODU1OTk4MjgxLDIwMjQ2Mz
-I5NjIsLTE3MjE5MjQxODMsLTE4NDEwMDg4ODcsLTExMTE2MDA4
-ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTU1NjQ4MjkxNSw1MDY1NDUzMzIsODA1Mz
+Y5MzcxLDM5MzgxMTAzMiwxNzE3NTg3MDgyLDE0Mjg2ODUyMywx
+MjMyOTMwNjIyLC0xMzQzNzczMzY4LDQ2OTQ5ODYxOSw4NTU5OT
+gyODEsMjAyNDYzMjk2MiwtMTcyMTkyNDE4MywtMTg0MTAwODg4
+NywtMTExMTYwMDg4Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTIsNz
+MwOTk4MTE2XX0=
 -->
