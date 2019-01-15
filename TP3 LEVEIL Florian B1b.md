@@ -308,7 +308,10 @@ success
 ```
 * Autorisation de ce port dans le firewall:
  ```
-
+[florian@localhost ~]$ sudo firewall-cmd --add-port=5454/tcp --permanent
+success
+[florian@localhost ~]$ sudo firewall-cmd --reload
+success
 ```
 
 **Dans un deuxième terminal**
@@ -323,10 +326,10 @@ success
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjQ3MjY3MjQsMjExNTgzNDYxNCwtNT
-U2NDgyOTE1LDUwNjU0NTMzMiw4MDUzNjkzNzEsMzkzODExMDMy
-LDE3MTc1ODcwODIsMTQyODY4NTIzLDEyMzI5MzA2MjIsLTEzND
-M3NzMzNjgsNDY5NDk4NjE5LDg1NTk5ODI4MSwyMDI0NjMyOTYy
-LC0xNzIxOTI0MTgzLC0xODQxMDA4ODg3LC0xMTExNjAwODg3LD
-g4NjMzNDc4NywtMjA4ODc0NjYxMiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTkwMjc5MjI3OSwyMTE1ODM0NjE0LC01NT
+Y0ODI5MTUsNTA2NTQ1MzMyLDgwNTM2OTM3MSwzOTM4MTEwMzIs
+MTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMiwtMTM0Mz
+c3MzM2OCw0Njk0OTg2MTksODU1OTk4MjgxLDIwMjQ2MzI5NjIs
+LTE3MjE5MjQxODMsLTE4NDEwMDg4ODcsLTExMTE2MDA4ODcsOD
+g2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
 -->
