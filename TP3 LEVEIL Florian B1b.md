@@ -100,7 +100,7 @@ Liste d'Interfaces
 
 IPv4 Table de routage
 ===========================================================================
-Itinéraires actifs :
+Itinéraires actifs :
 Destination réseau    Masque réseau  Adr. passerelle   Adr. interface Métrique
           0.0.0.0          0.0.0.0      10.33.3.253      10.33.2.111     35
         10.33.0.0    255.255.252.0         On-link       10.33.2.111    291
@@ -119,12 +119,12 @@ Destination réseau    Masque réseau  Adr. passerelle   Adr. interface Métriqu
   255.255.255.255  255.255.255.255         On-link       10.33.2.111    291
   255.255.255.255  255.255.255.255         On-link     192.168.127.1    281
 ===========================================================================
-Itinéraires persistants :
+Itinéraires persistants :
   Aucun
 
 IPv6 Table de routage
 ===========================================================================
-Itinéraires actifs :
+Itinéraires actifs :
  If Metric Network Destination      Gateway
   1    331 ::1/128                  On-link
  20    291 fe80::/64                On-link
@@ -137,13 +137,16 @@ Itinéraires actifs :
  20    291 ff00::/8                 On-link
  56    281 ff00::/8                 On-link
 ===========================================================================
-Itinéraires persistants :
+Itinéraires persistants :
   Aucun
 
 ```
 * de la VM
 ```
-
+[florian@localhost ~]$ ip route
+default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
+10.0.2.0/24 dev enp0s3 proto kernel scope link src 10.0.2.15 metric 100
+192.168.127.0/24 dev enp0s8 proto kernel scope link src 192.168.127.10 metric 101
 ```
 **Mettre en évidence la ligne qui leur permet de discuter:**
 * de l'hôte
@@ -168,7 +171,7 @@ Itinéraires persistants :
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNDYzMjk2MiwtMTcyMTkyNDE4MywtMT
-g0MTAwODg4NywtMTExMTYwMDg4Nyw4ODYzMzQ3ODcsLTIwODg3
-NDY2MTIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbODU1OTk4MjgxLDIwMjQ2MzI5NjIsLTE3Mj
+E5MjQxODMsLTE4NDEwMDg4ODcsLTExMTE2MDA4ODcsODg2MzM0
+Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
 -->
