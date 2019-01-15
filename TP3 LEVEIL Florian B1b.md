@@ -309,7 +309,9 @@ m.gtld-servers.net.     60588   IN      AAAA    2001:501:b1f9::30
 **Utilisation de la commande SS**
 * Pour TCP:
 ```
-
+[florian@localhost ~]$ ss -t
+State      Recv-Q Send-Q             Local Address:Port                              Peer Address:Port
+ESTAB      0      0                 192.168.127.10:ssh                              192.168.127.1:capioverlan
 ```
 * Pour Listening:
 ```
@@ -330,8 +332,8 @@ m.gtld-servers.net.     60588   IN      AAAA    2001:501:b1f9::30
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDM3NzMzNjgsNDY5NDk4NjE5LDg1NT
-k5ODI4MSwyMDI0NjMyOTYyLC0xNzIxOTI0MTgzLC0xODQxMDA4
-ODg3LC0xMTExNjAwODg3LDg4NjMzNDc4NywtMjA4ODc0NjYxMi
-w3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTIzMjkzMDYyMiwtMTM0Mzc3MzM2OCw0Nj
+k0OTg2MTksODU1OTk4MjgxLDIwMjQ2MzI5NjIsLTE3MjE5MjQx
+ODMsLTE4NDEwMDg4ODcsLTExMTE2MDA4ODcsODg2MzM0Nzg3LC
+0yMDg4NzQ2NjEyLDczMDk5ODExNl19
 -->
