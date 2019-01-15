@@ -304,7 +304,7 @@ success
 ```
 * Ecoute du port  `5454`  en TCP:
  ```
-
+[florian@localhost ~]$ nc -l 5454
 ```
 * Autorisation de ce port dans le firewall:
  ```
@@ -326,14 +326,20 @@ Trop bien
 **Dans un troisième terminal**
 * Visualisation de la connexion  `netcat`  en cours:
  ```
-
+[florian@localhost ~]$ ss -atnp4
+State      Recv-Q Send-Q               Local Address:Port                              Peer Address:Port
+LISTEN     0      128                              *:2222                                         *:*
+LISTEN     0      100                      127.0.0.1:25                                           *:*
+ESTAB      0      0                   192.168.127.10:5454                             192.168.127.1:1118                users:(("nc",pid=4521,fd=5))
+ESTAB      0      0                   192.168.127.10:2222                             192.168.127.1:1138
+ESTAB      0      0                   192.168.127.10:2222                             192.168.127.1:1117
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM1NjksMTkwMjc5MjI3OSwyMTE1ODM0Nj
-E0LC01NTY0ODI5MTUsNTA2NTQ1MzMyLDgwNTM2OTM3MSwzOTM4
-MTEwMzIsMTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMi
-wtMTM0Mzc3MzM2OCw0Njk0OTg2MTksODU1OTk4MjgxLDIwMjQ2
-MzI5NjIsLTE3MjE5MjQxODMsLTE4NDEwMDg4ODcsLTExMTE2MD
-A4ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLDczMDk5ODExNl19
-
+eyJoaXN0b3J5IjpbLTQ5MDQwOTIxMSwzMzU2OSwxOTAyNzkyMj
+c5LDIxMTU4MzQ2MTQsLTU1NjQ4MjkxNSw1MDY1NDUzMzIsODA1
+MzY5MzcxLDM5MzgxMTAzMiwxNzE3NTg3MDgyLDE0Mjg2ODUyMy
+wxMjMyOTMwNjIyLC0xMzQzNzczMzY4LDQ2OTQ5ODYxOSw4NTU5
+OTgyODEsMjAyNDYzMjk2MiwtMTcyMTkyNDE4MywtMTg0MTAwOD
+g4NywtMTExMTYwMDg4Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTJd
+fQ==
 -->
