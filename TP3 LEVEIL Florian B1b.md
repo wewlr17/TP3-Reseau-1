@@ -316,13 +316,22 @@ m.gtld-servers.net.     60588   IN      AAAA    2001:501:b1f9::30
 
 ```
 **Utilisation des options**
-* `-n`  pour avoir le numéro du port, plutôt qu'un nom
-* `-p`  pour connaître l'application qui écoute sur ce port
+* `-n` :
+```
 
-**vous devriez voir une application qui écoute sur le port 2**
+```
+* `-p` :
+```
+
+```
+
+**Application qui écoute sur le port 22:**
+```
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNjU5Njk1Myw0Njk0OTg2MTksODU1OT
-k4MjgxLDIwMjQ2MzI5NjIsLTE3MjE5MjQxODMsLTE4NDEwMDg4
-ODcsLTExMTE2MDA4ODcsODg2MzM0Nzg3LC0yMDg4NzQ2NjEyLD
-czMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEzNDM3NzMzNjgsNDY5NDk4NjE5LDg1NT
+k5ODI4MSwyMDI0NjMyOTYyLC0xNzIxOTI0MTgzLC0xODQxMDA4
+ODg3LC0xMTExNjAwODg3LDg4NjMzNDc4NywtMjA4ODc0NjYxMi
+w3MzA5OTgxMTZdfQ==
 -->
