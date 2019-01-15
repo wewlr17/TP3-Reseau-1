@@ -272,14 +272,22 @@ success
 ```
 * Le serveur SSH écoute sur un port différent de  `22` :
 ```
-
+[florian@localhost ~]$ ss -lnt
+State      Recv-Q Send-Q                   Local Address:Port                                  Peer Address:Port
+LISTEN     0      128                                  *:2222                                             *:*
+LISTEN     0      100                          127.0.0.1:25                                               *:*
+LISTEN     0      128                                 :::2222                                            :::*
+LISTEN     0      100                                ::1:25                                              :::*
 ```
 * connectez-vous au serveur en utilisant ce port
 ```
-
+PS C:\Users\Florian> ssh florian@192.168.127.10 -p 2222
+florian@192.168.127.10's password:
+Last login: Tue Jan 15 17:06:33 2019 from 192.168.127.1
+Last login: Tue Jan 15 17:06:33 2019 from 192.168.127.1
 ```
  * pourquoi ça a échoué ?
- 
+   * Par ce que le port n'a pas été autorisé par le firewall
  * Solution:
  ```
 
@@ -311,10 +319,10 @@ success
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NjQ4MjkxNSw1MDY1NDUzMzIsODA1Mz
-Y5MzcxLDM5MzgxMTAzMiwxNzE3NTg3MDgyLDE0Mjg2ODUyMywx
-MjMyOTMwNjIyLC0xMzQzNzczMzY4LDQ2OTQ5ODYxOSw4NTU5OT
-gyODEsMjAyNDYzMjk2MiwtMTcyMTkyNDE4MywtMTg0MTAwODg4
-NywtMTExMTYwMDg4Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTIsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEzNTExMDA3MzksLTU1NjQ4MjkxNSw1MD
+Y1NDUzMzIsODA1MzY5MzcxLDM5MzgxMTAzMiwxNzE3NTg3MDgy
+LDE0Mjg2ODUyMywxMjMyOTMwNjIyLC0xMzQzNzczMzY4LDQ2OT
+Q5ODYxOSw4NTU5OTgyODEsMjAyNDYzMjk2MiwtMTcyMTkyNDE4
+MywtMTg0MTAwODg4NywtMTExMTYwMDg4Nyw4ODYzMzQ3ODcsLT
+IwODg3NDY2MTIsNzMwOTk4MTE2XX0=
 -->
