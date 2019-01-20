@@ -338,12 +338,30 @@ ESTAB      0      0                   192.168.127.10:2222                       
 # III. Routage statique
 ## 1. Préparation des hôtes (vos PCs)
 ### Préparation avec câble
+**Toutes les ip :**
+* ip PC1: 192.168.112.1
+* ip PC2: 192.168.
+* ip VM1:
+* ip VM2:
+
 Ping PC2(moi) vers PC1(Gabin):
 ```
+PS C:\Users\Florian> ping 192.168.112.1
 
+Envoi d’une requête 'Ping'  192.168.112.1 avec 32 octets de données :
+Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
+
+Statistiques Ping pour 192.168.112.1:
+    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+Durée approximative des boucles en millisecondes :
+    Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
+PS C:\Users\Florian>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNTE4NzM0OSwtNDkwNDA5MjExLDMzNT
+eyJoaXN0b3J5IjpbLTk4NDU3ODM4NCwtNDkwNDA5MjExLDMzNT
 Y5LDE5MDI3OTIyNzksMjExNTgzNDYxNCwtNTU2NDgyOTE1LDUw
 NjU0NTMzMiw4MDUzNjkzNzEsMzkzODExMDMyLDE3MTc1ODcwOD
 IsMTQyODY4NTIzLDEyMzI5MzA2MjIsLTEzNDM3NzMzNjgsNDY5
