@@ -453,11 +453,15 @@ Commande pour les routes:
 
 ```
 ip route add 192.168.101.0/24 mask 255.255.255.0 192.168.112.1
+```
+```
 ip route add 192.168.101.0/24 via 192.168.101.10 dev enp0s8
 ```
 
 ```
 ip route add 192.168.101.0/24 mask 255.255.255.0 192.168.112.2
+```
+```
 ip route add 192.168.101.0/24 via 192.168.102.10 dev enp0s8
 ```
 
@@ -553,7 +557,7 @@ Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDY3OTkxMzQsMzY0MDkyNDQwLC0xNz
+eyJoaXN0b3J5IjpbLTEwNzE5MjAwMzAsMzY0MDkyNDQwLC0xNz
 E1NDg0ODMyLC0xMDI1MjAzMTksLTUxMzg3MjY1OSwxOTk5NjU4
 MjE5LC01MTczMTA2MDAsMTc2OTA1OTM2MCwtNDkwNDA5MjExLD
 MzNTY5LDE5MDI3OTIyNzksMjExNTgzNDYxNCwtNTU2NDgyOTE1
