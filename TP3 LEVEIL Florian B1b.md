@@ -334,12 +334,15 @@ ESTAB      0      0                   192.168.127.10:5454                       
 ESTAB      0      0                   192.168.127.10:2222                             192.168.127.1:1138
 ESTAB      0      0                   192.168.127.10:2222                             192.168.127.1:1117
 ```
+
+# III. Routage statique
+## 1. Préparation des hôtes (vos PCs)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MDQwOTIxMSwzMzU2OSwxOTAyNzkyMj
-c5LDIxMTU4MzQ2MTQsLTU1NjQ4MjkxNSw1MDY1NDUzMzIsODA1
-MzY5MzcxLDM5MzgxMTAzMiwxNzE3NTg3MDgyLDE0Mjg2ODUyMy
-wxMjMyOTMwNjIyLC0xMzQzNzczMzY4LDQ2OTQ5ODYxOSw4NTU5
-OTgyODEsMjAyNDYzMjk2MiwtMTcyMTkyNDE4MywtMTg0MTAwOD
-g4NywtMTExMTYwMDg4Nyw4ODYzMzQ3ODcsLTIwODg3NDY2MTJd
-fQ==
+eyJoaXN0b3J5IjpbMzgyNDc2NDgzLC00OTA0MDkyMTEsMzM1Nj
+ksMTkwMjc5MjI3OSwyMTE1ODM0NjE0LC01NTY0ODI5MTUsNTA2
+NTQ1MzMyLDgwNTM2OTM3MSwzOTM4MTEwMzIsMTcxNzU4NzA4Mi
+wxNDI4Njg1MjMsMTIzMjkzMDYyMiwtMTM0Mzc3MzM2OCw0Njk0
+OTg2MTksODU1OTk4MjgxLDIwMjQ2MzI5NjIsLTE3MjE5MjQxOD
+MsLTE4NDEwMDg4ODcsLTExMTE2MDA4ODcsODg2MzM0Nzg3XX0=
+
 -->
