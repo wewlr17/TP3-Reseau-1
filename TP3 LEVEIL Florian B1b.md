@@ -388,7 +388,7 @@ PING 192.168.112.1 (192.168.112.1) 56(84) bytes of data.
 64 bytes from 192.168.112.1: icmp_seq=8 ttl=127 time=0.913 ms
 ```
 
--   `ip route`  sur les Linux ou MacOS
+-   `ip route`  sur Linux
 ```
 [florian@localhost ~]$ ip route
 default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
@@ -557,11 +557,11 @@ Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzE5MjAwMzAsMzY0MDkyNDQwLC0xNz
-E1NDg0ODMyLC0xMDI1MjAzMTksLTUxMzg3MjY1OSwxOTk5NjU4
-MjE5LC01MTczMTA2MDAsMTc2OTA1OTM2MCwtNDkwNDA5MjExLD
-MzNTY5LDE5MDI3OTIyNzksMjExNTgzNDYxNCwtNTU2NDgyOTE1
-LDUwNjU0NTMzMiw4MDUzNjkzNzEsMzkzODExMDMyLDE3MTc1OD
-cwODIsMTQyODY4NTIzLDEyMzI5MzA2MjIsLTEzNDM3NzMzNjhd
+eyJoaXN0b3J5IjpbLTE4NjQxMTIwNDUsLTEwNzE5MjAwMzAsMz
+Y0MDkyNDQwLC0xNzE1NDg0ODMyLC0xMDI1MjAzMTksLTUxMzg3
+MjY1OSwxOTk5NjU4MjE5LC01MTczMTA2MDAsMTc2OTA1OTM2MC
+wtNDkwNDA5MjExLDMzNTY5LDE5MDI3OTIyNzksMjExNTgzNDYx
+NCwtNTU2NDgyOTE1LDUwNjU0NTMzMiw4MDUzNjkzNzEsMzkzOD
+ExMDMyLDE3MTc1ODcwODIsMTQyODY4NTIzLDEyMzI5MzA2MjJd
 fQ==
 -->
