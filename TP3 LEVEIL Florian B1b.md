@@ -511,7 +511,7 @@ PING pc1 (192.168.112.1) 56(84) bytes of data.
 ```
 ping vm1.tp3.b1
 PING vm1 (192.168.101.10) 56(84) bytes of data.
-64 bytes from vm1 (192.168.101.10): icmp_seq=1 ttl=62 time=5.04 ms
+64 bytes from vm1 (192.168.101.10): icmp_seq=1 ttl=62 time=6.58 ms
 
 ```
 
@@ -522,6 +522,8 @@ PS C:\Users\Florian> ping vm2.tp3.b1
 
 Envoi d’une requête 'ping' sur vm2.tp3.b1 [192.168.102.10] avec 32 octets de données :
 Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
+
 
 ```
 
@@ -530,6 +532,10 @@ PS C:\Users\Florian> ping pc1.tp3.b1
 
 Envoi d’une requête 'ping' sur pc1.tp3.b1 [192.168.112.1] avec 32 octets de données :
 Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
+Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
+Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
+Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
+
 
 ```
 
@@ -538,15 +544,18 @@ PS C:\Users\Florian> ping vm1.tp3.b1
 
 Envoi d’une requête 'ping' sur vm1.tp3.b1 [192.168.101.10] avec 32 octets de données :
 Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
-```
+Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
+Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
+Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
+``
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMTY1MzEyMCwtMTcxNTQ4NDgzMiwtMT
-AyNTIwMzE5LC01MTM4NzI2NTksMTk5OTY1ODIxOSwtNTE3MzEw
-NjAwLDE3NjkwNTkzNjAsLTQ5MDQwOTIxMSwzMzU2OSwxOTAyNz
-kyMjc5LDIxMTU4MzQ2MTQsLTU1NjQ4MjkxNSw1MDY1NDUzMzIs
-ODA1MzY5MzcxLDM5MzgxMTAzMiwxNzE3NTg3MDgyLDE0Mjg2OD
-UyMywxMjMyOTMwNjIyLC0xMzQzNzczMzY4LDQ2OTQ5ODYxOV19
-
+eyJoaXN0b3J5IjpbLTExNTU3OTQ3MTksLTE3MTU0ODQ4MzIsLT
+EwMjUyMDMxOSwtNTEzODcyNjU5LDE5OTk2NTgyMTksLTUxNzMx
+MDYwMCwxNzY5MDU5MzYwLC00OTA0MDkyMTEsMzM1NjksMTkwMj
+c5MjI3OSwyMTE1ODM0NjE0LC01NTY0ODI5MTUsNTA2NTQ1MzMy
+LDgwNTM2OTM3MSwzOTM4MTEwMzIsMTcxNzU4NzA4MiwxNDI4Nj
+g1MjMsMTIzMjkzMDYyMiwtMTM0Mzc3MzM2OCw0Njk0OTg2MTld
+fQ==
 -->
