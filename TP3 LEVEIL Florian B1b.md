@@ -344,21 +344,21 @@ ESTAB      0      0                   192.168.127.10:2222                       
 * ip VM1: 192.168.101.10
 * ip VM2: 192.168.102.10
 
-Ping PC2(moi) vers PC1(Gabin):
+Ping PC1(moi) vers PC2(Florian):
 ```
-PS C:\Users\Florian> ping 192.168.112.1
+PS C:\Users\Gabin> ping 192.168.112.2
 
-Envoi d’une requête 'Ping'  192.168.112.1 avec 32 octets de données :
-Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
-Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
-Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
-Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
+Envoi d’une requête 'Ping'  192.168.112.2 avec 32 octets de données :
+Réponse de 192.168.112.2 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.2 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.2 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.2 : octets=32 temps<1ms TTL=128
 
-Statistiques Ping pour 192.168.112.1:
+Statistiques Ping pour 192.168.112.2:
     Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
 Durée approximative des boucles en millisecondes :
     Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
-PS C:\Users\Florian>
+PS C:\Users\Gabin>
 ```
 Ipconfig:
 ```
@@ -369,36 +369,36 @@ Carte Ethernet Ethernet :
 
    Suffixe DNS propre à la connexion. . . :
    Adresse IPv6 de liaison locale. . . . .: fe80::70de:8f61:ddbb:d1fc%9
-   Adresse IPv4. . . . . . . . . . . . . .: 192.168.112.2
+   Adresse IPv4. . . . . . . . . . . . . .: 192.168.112.1
    Masque de sous-réseau. . . . . . . . . : 255.255.255.252
    Passerelle par défaut. . . . . . . . . :
 ```
 ### Check
-VM2 vers PC1:
+VM1 vers PC2:
 ```
-[florian@localhost ~]$ ping 192.168.112.1
+[gabin@localhost ~]$ ping 192.168.112.2
 PING 192.168.112.1 (192.168.112.1) 56(84) bytes of data.
-64 bytes from 192.168.112.1: icmp_seq=1 ttl=127 time=0.956 ms
-64 bytes from 192.168.112.1: icmp_seq=2 ttl=127 time=1.33 ms
-64 bytes from 192.168.112.1: icmp_seq=3 ttl=127 time=1.27 ms
-64 bytes from 192.168.112.1: icmp_seq=4 ttl=127 time=0.861 ms
-64 bytes from 192.168.112.1: icmp_seq=5 ttl=127 time=1.29 ms
-64 bytes from 192.168.112.1: icmp_seq=6 ttl=127 time=1.14 ms
-64 bytes from 192.168.112.1: icmp_seq=7 ttl=127 time=0.993 ms
-64 bytes from 192.168.112.1: icmp_seq=8 ttl=127 time=0.913 ms
+64 bytes from 192.168.112.2: icmp_seq=1 ttl=127 time=0.956 ms
+64 bytes from 192.168.112.2: icmp_seq=2 ttl=127 time=1.33 ms
+64 bytes from 192.168.112.2: icmp_seq=3 ttl=127 time=1.27 ms
+64 bytes from 192.168.112.2: icmp_seq=4 ttl=127 time=0.861 ms
+64 bytes from 192.168.112.2: icmp_seq=5 ttl=127 time=1.29 ms
+64 bytes from 192.168.112.2: icmp_seq=6 ttl=127 time=1.14 ms
+64 bytes from 192.168.112.2: icmp_seq=7 ttl=127 time=0.993 ms
+64 bytes from 192.168.112.2: icmp_seq=8 ttl=127 time=0.913 ms
 ```
 
--   `ip route`  sur Linux
+-   `ip route`  sur les Linux
 ```
-[florian@localhost ~]$ ip route
+[gabin@localhost ~]$ ip route
 default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
 10.0.2.0/24 dev enp0s3 proto kernel scope link src 10.0.2.15 metric 100
 192.168.102.0/24 dev enp0s8 proto kernel scope link src 192.168.102.10 metric 101
-[florian@localhost ~]$
+[gabin@localhost ~]$
 ```
 -   `route print -4`  sur Windows
 ```
-PS C:\Users\Florian> route print -4
+PS C:\Users\gabin> route print -4
 ===========================================================================
 Liste d'Interfaces
   9...d8 cb 8a f3 f1 d5 ......Killer E2400 Gigabit Ethernet Controller
@@ -427,7 +427,7 @@ Destination réseau    Masque réseau  Adr. passerelle   Adr. interface Métriqu
      172.20.10.15  255.255.255.255         On-link       172.20.10.2    306
      172.20.10.15  255.255.255.255         On-link       172.20.10.3    291
     192.168.102.0    255.255.255.0         On-link     192.168.102.2    281
-    192.168.102.2  255.255.255.255         On-link     192.168.102.2    281
+    192.168.102.10  255.255.255.255         On-link     192.168.102.2    281
   192.168.102.255  255.255.255.255         On-link     192.168.102.2    281
     192.168.112.0  255.255.255.252         On-link     192.168.112.2    281
     192.168.112.2  255.255.255.255         On-link     192.168.112.2    281
@@ -451,50 +451,40 @@ Itinéraires persistants :
 
 Commande pour les routes:
 
-```
-ip route add 192.168.101.0/24 mask 255.255.255.0 192.168.112.1
-```
-```
-ip route add 192.168.101.0/24 via 192.168.101.10 dev enp0s8
-```
+`ip route add 192.168.102.10/24 mask 255.255.255.0 192.168.112.2`
+`ip route add 192.168.102.10/24 via 192.168.102.10 dev enp0s8`
 
-```
-ip route add 192.168.101.0/24 mask 255.255.255.0 192.168.112.2
-```
-```
-ip route add 192.168.101.0/24 via 192.168.102.10 dev enp0s8
-```
-
-
+`ip route add 192.168.102.10/24 mask 255.255.255.0 192.168.112.1`
+`ip route add 192.168.102.10/24 via 192.168.101.10 dev enp0s8`
 
 PC2 > PC1:
 ```
-PS C:\WINDOWS\system32> ping 192.168.112.1
+PS C:\WINDOWS\system32> ping 192.168.112.2
 
-Envoi d’une requête 'Ping'  192.168.112.1 avec 32 octets de données :
-Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
-Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
-Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
-Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
+Envoi d’une requête 'Ping'  192.168.112.2 avec 32 octets de données :
+Réponse de 192.168.112.2 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.2 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.2 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.2 : octets=32 temps<1ms TTL=128
 
-Statistiques Ping pour 192.168.112.1:
+Statistiques Ping pour 192.168.112.2:
     Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
 Durée approximative des boucles en millisecondes :
     Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
 ```
 
-PC2 > VM1:
+PC1 > VM2:
 
 ```
-PS C:\WINDOWS\system32> ping 192.168.101.10
+PS C:\WINDOWS\system32> ping 192.168.102.10
 
-Envoi d’une requête 'Ping'  192.168.101.10 avec 32 octets de données :
-Réponse de 192.168.101.10 : octets=32 temps<1ms TTL=128
-Réponse de 192.168.101.10 : octets=32 temps<1ms TTL=128
-Réponse de 192.168.101.10 : octets=32 temps<1ms TTL=128
-Réponse de 192.168.101.10 : octets=32 temps<1ms TTL=128
+Envoi d’une requête 'Ping'  192.168.102.10 avec 32 octets de données :
+Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=128
 
-Statistiques Ping pour 192.168.101.10:
+Statistiques Ping pour 192.168.102.10:
     Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
 Durée approximative des boucles en millisecondes :
     Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
@@ -502,66 +492,68 @@ Durée approximative des boucles en millisecondes :
 ## 3. Ping avec la configuration des noms de domaine
 
 
-**VM2 > PC2**
-```
-ping pc2.tp3.b1
-PING pc2 (192.168.112.2) 56(84) bytes of data.
-64 bytes from pc2 (192.168.112.2): icmp_seq=1 ttl=128 time=0.486 ms
-
-```
-**VM2 > PC1**
-
+**VM1 > PC1**
 ```
 ping pc1.tp3.b1
 PING pc1 (192.168.112.1) 56(84) bytes of data.
-64 bytes from pc1 (192.168.112.1): icmp_seq=1 ttl=127 time=4.62 ms
-```
-**VM2 > VM1**
+64 bytes from pc2 (192.168.112.1): icmp_seq=1 ttl=128 time=0.486 ms
 
 ```
-ping vm1.tp3.b1
-PING vm1 (192.168.101.10) 56(84) bytes of data.
-64 bytes from vm1 (192.168.101.10): icmp_seq=1 ttl=62 time=6.58 ms
-```
-
-**PC2> VM2**
+**VM1 > PC2**
 
 ```
-PS C:\Users\Florian> ping vm2.tp3.b1
-Envoi d’une requête 'ping' sur vm2.tp3.b1 [192.168.102.10] avec 32 octets de données :
-Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
-Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
-Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
-Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
+ping pc2.tp3.b1
+PING pc2 (192.168.112.2) 56(84) bytes of data.
+64 bytes from pc1 (192.168.112.2): icmp_seq=1 ttl=127 time=4.62 ms
 ```
-**PC2> PC1**
+**VM1 > VM2**
 
 ```
-PS C:\Users\Florian> ping pc1.tp3.b1
-Envoi d’une requête 'ping' sur pc1.tp3.b1 [192.168.112.1] avec 32 octets de données :
-Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
-Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
-Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
-Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
+ping vm2.tp3.b1
+PING vm2 (192.168.102.10) 56(84) bytes of data.
+64 bytes from vm1 (192.168.102.10): icmp_seq=1 ttl=62 time=6.58 ms
 ```
-**PC2> VM1**
+
+**PC1> VM1**
 
 ```
-PS C:\Users\Florian> ping vm1.tp3.b1
+PS C:\Users\gabin> ping vm1.tp3.b1
 Envoi d’une requête 'ping' sur vm1.tp3.b1 [192.168.101.10] avec 32 octets de données :
-Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
-Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
-Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
-Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
+Réponse de 192.168.101.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.101.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.101.10 : octets=32 temps<1ms TTL=64
+Réponse de 192.168.101.10 : octets=32 temps<1ms TTL=64
 ```
+**PC1> PC2**
+
+```
+PS C:\Users\Gabin> ping pc2.tp3.b1
+Envoi d’une requête 'ping' sur pc2.tp3.b1 [192.168.112.2] avec 32 octets de données :
+Réponse de 192.168.112.2 : octets=32 temps=4 ms TTL=128
+Réponse de 192.168.112.2 : octets=32 temps=4 ms TTL=128
+Réponse de 192.168.112.2 : octets=32 temps=4 ms TTL=128
+Réponse de 192.168.112.2 : octets=32 temps=4 ms TTL=128
+```
+**PC1> VM2**
+
+```
+PS C:\Users\Gabin> ping vm2.tp3.b1
+Envoi d’une requête 'ping' sur vm2.tp3.b1 [192.168.102.10] avec 32 octets de données :
+Réponse de 192.168.102.10 : octets=32 temps=4 ms TTL=63
+Réponse de 192.168.102.10 : octets=32 temps=4 ms TTL=63
+Réponse de 192.168.102.10 : octets=32 temps=4 ms TTL=63
+Réponse de 192.168.102.10 : octets=32 temps=4 ms TTL=63
+``
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQxMTIwNDUsLTEwNzE5MjAwMzAsMz
-Y0MDkyNDQwLC0xNzE1NDg0ODMyLC0xMDI1MjAzMTksLTUxMzg3
-MjY1OSwxOTk5NjU4MjE5LC01MTczMTA2MDAsMTc2OTA1OTM2MC
-wtNDkwNDA5MjExLDMzNTY5LDE5MDI3OTIyNzksMjExNTgzNDYx
-NCwtNTU2NDgyOTE1LDUwNjU0NTMzMiw4MDUzNjkzNzEsMzkzOD
-ExMDMyLDE3MTc1ODcwODIsMTQyODY4NTIzLDEyMzI5MzA2MjJd
-fQ==
+eyJoaXN0b3J5IjpbLTIxMjkwNzY0MiwzNjQwOTI0NDAsLTE3MT
+U0ODQ4MzIsLTEwMjUyMDMxOSwtNTEzODcyNjU5LDE5OTk2NTgy
+MTksLTUxNzMxMDYwMCwxNzY5MDU5MzYwLC00OTA0MDkyMTEsMz
+M1NjksMTkwMjc5MjI3OSwyMTE1ODM0NjE0LC01NTY0ODI5MTUs
+NTA2NTQ1MzMyLDgwNTM2OTM3MSwzOTM4MTEwMzIsMTcxNzU4Nz
+A4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMiwtMTM0Mzc3MzM2OF19
+
 -->
