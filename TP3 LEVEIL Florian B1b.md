@@ -456,9 +456,27 @@ Commande pour les routes:
 `ip route add 192.168.101.0/24 mask 255.255.255.0 192.168.112.2`
 `ip route add 192.168.101.0/24 via 192.168.102.10 dev enp0s8`
 
+PC2 > PC1:
+```
+PS C:\WINDOWS\system32> ping 192.168.112.1
+
+Envoi d’une requête 'Ping'  192.168.112.1 avec 32 octets de données :
+Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
+Réponse de 192.168.112.1 : octets=32 temps<1ms TTL=128
+
+Statistiques Ping pour 192.168.112.1:
+    Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
+Durée approximative des boucles en millisecondes :
+    Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
+```
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MjEzOTYzNywxOTk5NjU4MjE5LC01MT
+eyJoaXN0b3J5IjpbMTAyNjI3ODM4MCwxOTk5NjU4MjE5LC01MT
 czMTA2MDAsMTc2OTA1OTM2MCwtNDkwNDA5MjExLDMzNTY5LDE5
 MDI3OTIyNzksMjExNTgzNDYxNCwtNTU2NDgyOTE1LDUwNjU0NT
 MzMiw4MDUzNjkzNzEsMzkzODExMDMyLDE3MTc1ODcwODIsMTQy
