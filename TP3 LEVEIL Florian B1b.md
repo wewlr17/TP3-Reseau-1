@@ -340,9 +340,9 @@ ESTAB      0      0                   192.168.127.10:2222                       
 ### Préparation avec câble
 **Toutes les ip :**
 * ip PC1: 192.168.112.1
-* ip PC2: 192.168.
-* ip VM1:
-* ip VM2:
+* ip PC2: 192.168.112.2
+* ip VM1: 192.168.101.10
+* ip VM2: 192.168.102.10
 
 Ping PC2(moi) vers PC1(Gabin):
 ```
@@ -361,11 +361,11 @@ Durée approximative des boucles en millisecondes :
 PS C:\Users\Florian>
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NDU3ODM4NCwtNDkwNDA5MjExLDMzNT
-Y5LDE5MDI3OTIyNzksMjExNTgzNDYxNCwtNTU2NDgyOTE1LDUw
-NjU0NTMzMiw4MDUzNjkzNzEsMzkzODExMDMyLDE3MTc1ODcwOD
-IsMTQyODY4NTIzLDEyMzI5MzA2MjIsLTEzNDM3NzMzNjgsNDY5
-NDk4NjE5LDg1NTk5ODI4MSwyMDI0NjMyOTYyLC0xNzIxOTI0MT
-gzLC0xODQxMDA4ODg3LC0xMTExNjAwODg3LDg4NjMzNDc4N119
-
+eyJoaXN0b3J5IjpbLTE3NDA1MzAwOTksLTQ5MDQwOTIxMSwzMz
+U2OSwxOTAyNzkyMjc5LDIxMTU4MzQ2MTQsLTU1NjQ4MjkxNSw1
+MDY1NDUzMzIsODA1MzY5MzcxLDM5MzgxMTAzMiwxNzE3NTg3MD
+gyLDE0Mjg2ODUyMywxMjMyOTMwNjIyLC0xMzQzNzczMzY4LDQ2
+OTQ5ODYxOSw4NTU5OTgyODEsMjAyNDYzMjk2MiwtMTcyMTkyND
+E4MywtMTg0MTAwODg4NywtMTExMTYwMDg4Nyw4ODYzMzQ3ODdd
+fQ==
 -->
