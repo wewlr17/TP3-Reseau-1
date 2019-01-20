@@ -494,8 +494,8 @@ Durée approximative des boucles en millisecondes :
 **VM2 > PC2**
 ```
 ping pc2.tp3.b1
-PING pc2 (192.168.102.1) 56(84) bytes of data.
-64 bytes from pc2 (192.168.102.1): icmp_seq=1 ttl=128 time=0.326 ms
+PING pc2 (192.168.112.2) 56(84) bytes of data.
+64 bytes from pc2 (192.168.112.2): icmp_seq=1 ttl=128 time=0.486 ms
 
 ```
 **VM2 > PC1**
@@ -503,7 +503,7 @@ PING pc2 (192.168.102.1) 56(84) bytes of data.
 ```
 ping pc1.tp3.b1
 PING pc1 (192.168.112.1) 56(84) bytes of data.
-64 bytes from pc1 (192.168.112.1): icmp_seq=1 ttl=127 time=5.72 ms
+64 bytes from pc1 (192.168.112.1): icmp_seq=1 ttl=127 time=4.62 ms
 
 ```
 **VM2 > VM1**
@@ -542,11 +542,11 @@ Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ4NDk3OTUsLTE3MTU0ODQ4MzIsLTEwMj
-UyMDMxOSwtNTEzODcyNjU5LDE5OTk2NTgyMTksLTUxNzMxMDYw
-MCwxNzY5MDU5MzYwLC00OTA0MDkyMTEsMzM1NjksMTkwMjc5Mj
-I3OSwyMTE1ODM0NjE0LC01NTY0ODI5MTUsNTA2NTQ1MzMyLDgw
-NTM2OTM3MSwzOTM4MTEwMzIsMTcxNzU4NzA4MiwxNDI4Njg1Mj
-MsMTIzMjkzMDYyMiwtMTM0Mzc3MzM2OCw0Njk0OTg2MTldfQ==
+eyJoaXN0b3J5IjpbLTUwMTY1MzEyMCwtMTcxNTQ4NDgzMiwtMT
+AyNTIwMzE5LC01MTM4NzI2NTksMTk5OTY1ODIxOSwtNTE3MzEw
+NjAwLDE3NjkwNTkzNjAsLTQ5MDQwOTIxMSwzMzU2OSwxOTAyNz
+kyMjc5LDIxMTU4MzQ2MTQsLTU1NjQ4MjkxNSw1MDY1NDUzMzIs
+ODA1MzY5MzcxLDM5MzgxMTAzMiwxNzE3NTg3MDgyLDE0Mjg2OD
+UyMywxMjMyOTMwNjIyLC0xMzQzNzczMzY4LDQ2OTQ5ODYxOV19
 
 -->
