@@ -398,10 +398,58 @@ default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
 ```
 -   `route print -4`  sur Windows
 ```
+PS C:\Users\Florian> route print -4
+===========================================================================
+Liste d'Interfaces
+  9...d8 cb 8a f3 f1 d5 ......Killer E2400 Gigabit Ethernet Controller
+ 12...0a 00 27 00 00 0c ......VirtualBox Host-Only Ethernet Adapter #2
+  3...9e b6 d0 09 ab 45 ......Microsoft Wi-Fi Direct Virtual Adapter
+  4...ae b6 d0 09 ab 45 ......Microsoft Wi-Fi Direct Virtual Adapter #2
+ 20...16 c2 13 9a 27 ed ......Apple Mobile Device Ethernet
+ 21...9c b6 d0 09 ab 45 ......Killer Wireless-n/a/ac 1535 Wireless Network Adapter
+ 17...9c b6 d0 09 ab 46 ......Bluetooth Device (Personal Area Network)
+  1...........................Software Loopback Interface 1
+===========================================================================
 
+IPv4 Table de routage
+===========================================================================
+Itinéraires actifs :
+Destination réseau    Masque réseau  Adr. passerelle   Adr. interface Métrique
+          0.0.0.0          0.0.0.0      172.20.10.1      172.20.10.2     50
+          0.0.0.0          0.0.0.0      172.20.10.1      172.20.10.3     35
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+      172.20.10.0  255.255.255.240         On-link       172.20.10.2    306
+      172.20.10.0  255.255.255.240         On-link       172.20.10.3    291
+      172.20.10.2  255.255.255.255         On-link       172.20.10.2    306
+      172.20.10.3  255.255.255.255         On-link       172.20.10.3    291
+     172.20.10.15  255.255.255.255         On-link       172.20.10.2    306
+     172.20.10.15  255.255.255.255         On-link       172.20.10.3    291
+    192.168.102.0    255.255.255.0         On-link     192.168.102.2    281
+    192.168.102.2  255.255.255.255         On-link     192.168.102.2    281
+  192.168.102.255  255.255.255.255         On-link     192.168.102.2    281
+    192.168.112.0  255.255.255.252         On-link     192.168.112.2    281
+    192.168.112.2  255.255.255.255         On-link     192.168.112.2    281
+    192.168.112.3  255.255.255.255         On-link     192.168.112.2    281
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link     192.168.102.2    281
+        224.0.0.0        240.0.0.0         On-link     192.168.112.2    281
+        224.0.0.0        240.0.0.0         On-link       172.20.10.2    306
+        224.0.0.0        240.0.0.0         On-link       172.20.10.3    291
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link     192.168.102.2    281
+  255.255.255.255  255.255.255.255         On-link     192.168.112.2    281
+  255.255.255.255  255.255.255.255         On-link       172.20.10.2    306
+  255.255.255.255  255.255.255.255         On-link       172.20.10.3    291
+===========================================================================
+Itinéraires persistants :
+  Aucun
 ```
+
+### Activation du routage sur les PCs
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNTU4MzQ2NywxNzY5MDU5MzYwLC00OT
+eyJoaXN0b3J5IjpbLTUxNzMxMDYwMCwxNzY5MDU5MzYwLC00OT
 A0MDkyMTEsMzM1NjksMTkwMjc5MjI3OSwyMTE1ODM0NjE0LC01
 NTY0ODI5MTUsNTA2NTQ1MzMyLDgwNTM2OTM3MSwzOTM4MTEwMz
 IsMTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMiwtMTM0
