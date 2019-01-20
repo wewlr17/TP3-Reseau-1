@@ -491,14 +491,14 @@ Durée approximative des boucles en millisecondes :
 ## 3. Configuration des noms de domaine
 
 
-VM2 > PC2
+**VM2 > PC2**
 ```
 ping pc2.tp3.b1
 PING pc2 (192.168.102.1) 56(84) bytes of data.
 64 bytes from pc2 (192.168.102.1): icmp_seq=1 ttl=128 time=0.326 ms
 
 ```
-**VM2 > PC2**
+**VM2 > PC1**
 
 ```
 ping pc1.tp3.b1
@@ -506,6 +506,7 @@ PING pc1 (192.168.112.1) 56(84) bytes of data.
 64 bytes from pc1 (192.168.112.1): icmp_seq=1 ttl=127 time=5.72 ms
 
 ```
+**VM2 > VM1**
 
 ```
 ping vm1.tp3.b1
@@ -541,11 +542,11 @@ Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MjAxMDM5NiwtMTAyNTIwMzE5LC01MT
-M4NzI2NTksMTk5OTY1ODIxOSwtNTE3MzEwNjAwLDE3NjkwNTkz
-NjAsLTQ5MDQwOTIxMSwzMzU2OSwxOTAyNzkyMjc5LDIxMTU4Mz
-Q2MTQsLTU1NjQ4MjkxNSw1MDY1NDUzMzIsODA1MzY5MzcxLDM5
-MzgxMTAzMiwxNzE3NTg3MDgyLDE0Mjg2ODUyMywxMjMyOTMwNj
-IyLC0xMzQzNzczMzY4LDQ2OTQ5ODYxOSw4NTU5OTgyODFdfQ==
+eyJoaXN0b3J5IjpbLTE3MTU0ODQ4MzIsLTEwMjUyMDMxOSwtNT
+EzODcyNjU5LDE5OTk2NTgyMTksLTUxNzMxMDYwMCwxNzY5MDU5
+MzYwLC00OTA0MDkyMTEsMzM1NjksMTkwMjc5MjI3OSwyMTE1OD
+M0NjE0LC01NTY0ODI5MTUsNTA2NTQ1MzMyLDgwNTM2OTM3MSwz
+OTM4MTEwMzIsMTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMD
+YyMiwtMTM0Mzc3MzM2OCw0Njk0OTg2MTksODU1OTk4MjgxXX0=
 
 -->
