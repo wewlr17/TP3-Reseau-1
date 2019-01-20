@@ -451,10 +451,14 @@ Itinéraires persistants :
 
 Commande pour les routes:
 `ip route add 192.168.101.0/24 mask 255.255.255.0 192.168.112.1`
+`ip route add 192.168.101.0/24 via 192.168.101.10 dev enp0s8`
 
-_Ajout de la route sur VM2_  `ip route add 192.168.101.0/24 via 192.168.102.1 dev enp0s8`
+`ip route add 192.168.101.0/24 mask 255.255.255.0 192.168.112.2`
+`ip route add 192.168.101.0/24 via 192.168.102.10 dev enp0s8`
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDY5NjExNCwxOTk5NjU4MjE5LC01MT
+eyJoaXN0b3J5IjpbLTc4MjEzOTYzNywxOTk5NjU4MjE5LC01MT
 czMTA2MDAsMTc2OTA1OTM2MCwtNDkwNDA5MjExLDMzNTY5LDE5
 MDI3OTIyNzksMjExNTgzNDYxNCwtNTU2NDgyOTE1LDUwNjU0NT
 MzMiw4MDUzNjkzNzEsMzkzODExMDMyLDE3MTc1ODcwODIsMTQy
