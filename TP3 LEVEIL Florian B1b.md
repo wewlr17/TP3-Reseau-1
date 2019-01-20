@@ -491,13 +491,61 @@ Durée approximative des boucles en millisecondes :
 ## 3. Configuration des noms de domaine
 
 
+VM2 > PC2
+```
+ping pc2.tp3.b1
+PING pc2 (192.168.102.1) 56(84) bytes of data.
+64 bytes from pc2 (192.168.102.1): icmp_seq=1 ttl=128 time=0.326 ms
+
+```
+**VM2 > PC2**
+
+```
+ping pc1.tp3.b1
+PING pc1 (192.168.112.1) 56(84) bytes of data.
+64 bytes from pc1 (192.168.112.1): icmp_seq=1 ttl=127 time=5.72 ms
+
+```
+
+```
+ping vm1.tp3.b1
+PING vm1 (192.168.101.10) 56(84) bytes of data.
+64 bytes from vm1 (192.168.101.10): icmp_seq=1 ttl=62 time=5.04 ms
+
+```
+
+**Résultats des ping depuis le PC :**
+
+```
+ping vm2.tp3.b1
+
+Envoi d’une requête 'ping' sur vm2.tp3.b1 [192.168.102.10] avec 32 octets de données :
+Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
+
+```
+
+```
+ping pc1.tp3.b1
+
+Envoi d’une requête 'ping' sur pc1.tp3.b1 [192.168.112.1] avec 32 octets de données :
+Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
+
+```
+
+```
+ping vm1.tp3.b1
+
+Envoi d’une requête 'ping' sur vm1.tp3.b1 [192.168.101.10] avec 32 octets de données :
+Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjUyMDMxOSwtNTEzODcyNjU5LDE5OT
-k2NTgyMTksLTUxNzMxMDYwMCwxNzY5MDU5MzYwLC00OTA0MDky
-MTEsMzM1NjksMTkwMjc5MjI3OSwyMTE1ODM0NjE0LC01NTY0OD
-I5MTUsNTA2NTQ1MzMyLDgwNTM2OTM3MSwzOTM4MTEwMzIsMTcx
-NzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMiwtMTM0Mzc3Mz
-M2OCw0Njk0OTg2MTksODU1OTk4MjgxLDIwMjQ2MzI5NjJdfQ==
+eyJoaXN0b3J5IjpbMTE5MjAxMDM5NiwtMTAyNTIwMzE5LC01MT
+M4NzI2NTksMTk5OTY1ODIxOSwtNTE3MzEwNjAwLDE3NjkwNTkz
+NjAsLTQ5MDQwOTIxMSwzMzU2OSwxOTAyNzkyMjc5LDIxMTU4Mz
+Q2MTQsLTU1NjQ4MjkxNSw1MDY1NDUzMzIsODA1MzY5MzcxLDM5
+MzgxMTAzMiwxNzE3NTg3MDgyLDE0Mjg2ODUyMywxMjMyOTMwNj
+IyLC0xMzQzNzczMzY4LDQ2OTQ5ODYxOSw4NTU5OTgyODFdfQ==
 
 -->
