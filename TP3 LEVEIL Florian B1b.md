@@ -362,10 +362,20 @@ PS C:\Users\Florian>
 ```
 Ipconfig:
 ```
+Configuration IP de Windows
 
+
+Carte Ethernet Ethernet :
+
+   Suffixe DNS propre à la connexion. . . :
+   Adresse IPv6 de liaison locale. . . . .: fe80::70de:8f61:ddbb:d1fc%9
+   Adresse IPv4. . . . . . . . . . . . . .: 192.168.112.2
+   Masque de sous-réseau. . . . . . . . . : 255.255.255.252
+   Passerelle par défaut. . . . . . . . . :
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0ODk5MzI0MiwtNDkwNDA5MjExLDMzNT
+eyJoaXN0b3J5IjpbMTc2OTA1OTM2MCwtNDkwNDA5MjExLDMzNT
 Y5LDE5MDI3OTIyNzksMjExNTgzNDYxNCwtNTU2NDgyOTE1LDUw
 NjU0NTMzMiw4MDUzNjkzNzEsMzkzODExMDMyLDE3MTc1ODcwOD
 IsMTQyODY4NTIzLDEyMzI5MzA2MjIsLTEzNDM3NzMzNjgsNDY5
