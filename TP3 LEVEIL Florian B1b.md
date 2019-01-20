@@ -518,7 +518,7 @@ PING vm1 (192.168.101.10) 56(84) bytes of data.
 **Résultats des ping depuis le PC :**
 
 ```
-ping vm2.tp3.b1
+PS C:\Users\Florian> ping vm2.tp3.b1
 
 Envoi d’une requête 'ping' sur vm2.tp3.b1 [192.168.102.10] avec 32 octets de données :
 Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
@@ -526,7 +526,7 @@ Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
 ```
 
 ```
-ping pc1.tp3.b1
+PS C:\Users\Florian> ping pc1.tp3.b1
 
 Envoi d’une requête 'ping' sur pc1.tp3.b1 [192.168.112.1] avec 32 octets de données :
 Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
@@ -534,7 +534,7 @@ Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
 ```
 
 ```
-ping vm1.tp3.b1
+PS C:\Users\Florian> ping vm1.tp3.b1
 
 Envoi d’une requête 'ping' sur vm1.tp3.b1 [192.168.101.10] avec 32 octets de données :
 Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
@@ -542,11 +542,11 @@ Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU0ODQ4MzIsLTEwMjUyMDMxOSwtNT
-EzODcyNjU5LDE5OTk2NTgyMTksLTUxNzMxMDYwMCwxNzY5MDU5
-MzYwLC00OTA0MDkyMTEsMzM1NjksMTkwMjc5MjI3OSwyMTE1OD
-M0NjE0LC01NTY0ODI5MTUsNTA2NTQ1MzMyLDgwNTM2OTM3MSwz
-OTM4MTEwMzIsMTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMD
-YyMiwtMTM0Mzc3MzM2OCw0Njk0OTg2MTksODU1OTk4MjgxXX0=
+eyJoaXN0b3J5IjpbNzQ4NDk3OTUsLTE3MTU0ODQ4MzIsLTEwMj
+UyMDMxOSwtNTEzODcyNjU5LDE5OTk2NTgyMTksLTUxNzMxMDYw
+MCwxNzY5MDU5MzYwLC00OTA0MDkyMTEsMzM1NjksMTkwMjc5Mj
+I3OSwyMTE1ODM0NjE0LC01NTY0ODI5MTUsNTA2NTQ1MzMyLDgw
+NTM2OTM3MSwzOTM4MTEwMzIsMTcxNzU4NzA4MiwxNDI4Njg1Mj
+MsMTIzMjkzMDYyMiwtMTM0Mzc3MzM2OCw0Njk0OTg2MTldfQ==
 
 -->
