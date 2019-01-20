@@ -388,9 +388,20 @@ PING 192.168.112.1 (192.168.112.1) 56(84) bytes of data.
 64 bytes from 192.168.112.1: icmp_seq=8 ttl=127 time=0.913 ms
 ```
 
+-   `ip route`  sur les Linux ou MacOS
+```
+[florian@localhost ~]$ ip route
+default via 10.0.2.2 dev enp0s3 proto dhcp metric 100
+10.0.2.0/24 dev enp0s3 proto kernel scope link src 10.0.2.15 metric 100
+192.168.102.0/24 dev enp0s8 proto kernel scope link src 192.168.102.10 metric 101
+[florian@localhost ~]$
+```
+-   `route print -4`  sur Windows
+```
 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNTE3MzA4NywxNzY5MDU5MzYwLC00OT
+eyJoaXN0b3J5IjpbLTYxNTU4MzQ2NywxNzY5MDU5MzYwLC00OT
 A0MDkyMTEsMzM1NjksMTkwMjc5MjI3OSwyMTE1ODM0NjE0LC01
 NTY0ODI5MTUsNTA2NTQ1MzMyLDgwNTM2OTM3MSwzOTM4MTEwMz
 IsMTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMiwtMTM0
