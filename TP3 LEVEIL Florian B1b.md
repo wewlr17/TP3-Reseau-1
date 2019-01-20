@@ -373,13 +373,28 @@ Carte Ethernet Ethernet :
    Masque de sous-réseau. . . . . . . . . : 255.255.255.252
    Passerelle par défaut. . . . . . . . . :
 ```
+### Check
+VM2 vers PC1:
+```
+[florian@localhost ~]$ ping 192.168.112.1
+PING 192.168.112.1 (192.168.112.1) 56(84) bytes of data.
+64 bytes from 192.168.112.1: icmp_seq=1 ttl=127 time=0.956 ms
+64 bytes from 192.168.112.1: icmp_seq=2 ttl=127 time=1.33 ms
+64 bytes from 192.168.112.1: icmp_seq=3 ttl=127 time=1.27 ms
+64 bytes from 192.168.112.1: icmp_seq=4 ttl=127 time=0.861 ms
+64 bytes from 192.168.112.1: icmp_seq=5 ttl=127 time=1.29 ms
+64 bytes from 192.168.112.1: icmp_seq=6 ttl=127 time=1.14 ms
+64 bytes from 192.168.112.1: icmp_seq=7 ttl=127 time=0.993 ms
+64 bytes from 192.168.112.1: icmp_seq=8 ttl=127 time=0.913 ms
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2OTA1OTM2MCwtNDkwNDA5MjExLDMzNT
-Y5LDE5MDI3OTIyNzksMjExNTgzNDYxNCwtNTU2NDgyOTE1LDUw
-NjU0NTMzMiw4MDUzNjkzNzEsMzkzODExMDMyLDE3MTc1ODcwOD
-IsMTQyODY4NTIzLDEyMzI5MzA2MjIsLTEzNDM3NzMzNjgsNDY5
-NDk4NjE5LDg1NTk5ODI4MSwyMDI0NjMyOTYyLC0xNzIxOTI0MT
-gzLC0xODQxMDA4ODg3LC0xMTExNjAwODg3LDg4NjMzNDc4N119
-
+eyJoaXN0b3J5IjpbLTQzNTE3MzA4NywxNzY5MDU5MzYwLC00OT
+A0MDkyMTEsMzM1NjksMTkwMjc5MjI3OSwyMTE1ODM0NjE0LC01
+NTY0ODI5MTUsNTA2NTQ1MzMyLDgwNTM2OTM3MSwzOTM4MTEwMz
+IsMTcxNzU4NzA4MiwxNDI4Njg1MjMsMTIzMjkzMDYyMiwtMTM0
+Mzc3MzM2OCw0Njk0OTg2MTksODU1OTk4MjgxLDIwMjQ2MzI5Nj
+IsLTE3MjE5MjQxODMsLTE4NDEwMDg4ODcsLTExMTE2MDA4ODdd
+fQ==
 -->
