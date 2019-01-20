@@ -488,7 +488,7 @@ Statistiques Ping pour 192.168.101.10:
 Durée approximative des boucles en millisecondes :
     Minimum = 0ms, Maximum = 0ms, Moyenne = 0ms
 ```
-## 3. Configuration des noms de domaine
+## 3. Ping avec la configuration des noms de domaine
 
 
 **VM2 > PC2**
@@ -504,7 +504,6 @@ PING pc2 (192.168.112.2) 56(84) bytes of data.
 ping pc1.tp3.b1
 PING pc1 (192.168.112.1) 56(84) bytes of data.
 64 bytes from pc1 (192.168.112.1): icmp_seq=1 ttl=127 time=4.62 ms
-
 ```
 **VM2 > VM1**
 
@@ -512,50 +511,42 @@ PING pc1 (192.168.112.1) 56(84) bytes of data.
 ping vm1.tp3.b1
 PING vm1 (192.168.101.10) 56(84) bytes of data.
 64 bytes from vm1 (192.168.101.10): icmp_seq=1 ttl=62 time=6.58 ms
-
 ```
 
 **PC2> VM2**
 
 ```
 PS C:\Users\Florian> ping vm2.tp3.b1
-
 Envoi d’une requête 'ping' sur vm2.tp3.b1 [192.168.102.10] avec 32 octets de données :
 Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
 Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
 Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
 Réponse de 192.168.102.10 : octets=32 temps<1ms TTL=64
-
-
 ```
 **PC2> PC1**
 
 ```
 PS C:\Users\Florian> ping pc1.tp3.b1
-
 Envoi d’une requête 'ping' sur pc1.tp3.b1 [192.168.112.1] avec 32 octets de données :
 Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
 Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
 Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
 Réponse de 192.168.112.1 : octets=32 temps=4 ms TTL=128
-
-
 ```
 **PC2> VM1**
 
 ```
 PS C:\Users\Florian> ping vm1.tp3.b1
-
 Envoi d’une requête 'ping' sur vm1.tp3.b1 [192.168.101.10] avec 32 octets de données :
 Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
 Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
 Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
 Réponse de 192.168.101.10 : octets=32 temps=4 ms TTL=63
-``
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczMDg2ODc0LC0xNzE1NDg0ODMyLC0xMD
+eyJoaXN0b3J5IjpbMzY0MDkyNDQwLC0xNzE1NDg0ODMyLC0xMD
 I1MjAzMTksLTUxMzg3MjY1OSwxOTk5NjU4MjE5LC01MTczMTA2
 MDAsMTc2OTA1OTM2MCwtNDkwNDA5MjExLDMzNTY5LDE5MDI3OT
 IyNzksMjExNTgzNDYxNCwtNTU2NDgyOTE1LDUwNjU0NTMzMiw4
